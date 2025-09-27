@@ -4,7 +4,7 @@
     "useDefineForClassFields": true,
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "module": "ESNext",
-    "skipLibCheck": true,
+    "skipLibCheck": true,          // skip type checking for libraries
 
     /* Bundler mode */
     "moduleResolution": "bundler",
@@ -20,11 +20,17 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
 
-    /* for ShadCN */
+    /* ShadCN & alias */
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
-    }
+    },
+
+    /* Fix common issues */
+    "strictNullChecks": true,       // ensures 'undefined' is handled
+    "noImplicitAny": false,         // allow implicit any to avoid missing types errors
+    "allowJs": true,                // allow JS files (like your SEOHead.jsx)
+    "resolveJsonModule": true       // allow importing JSON
   },
   "include": ["src"]
 }
