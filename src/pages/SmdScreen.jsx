@@ -151,7 +151,7 @@ const SmdScreen = () => {
         url="/smd-screen"
       />
 
-      <main id="main-content" className={`${isFullscreen ? 'h-screen' : 'pt-20'} overflow-hidden`}>
+      <main id="main-content" className={`${isFullscreen ? 'h-screen' : ''} overflow-hidden`}>
         {/* Instructions Banner (only show when not fullscreen) */}
         {!isFullscreen && (
           <div className="bg-blackish text-white py-2 px-4 text-center">

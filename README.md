@@ -65,29 +65,33 @@ src/
 ## ⚙️ Installation & Setup
 
 1. **Clone the repository**
+
    ```bash
    git clone <repository-url>
    cd skywardvision
    ```
 
 2. **Install dependencies**
+
    ```bash
    npm install
    ```
 
 3. **Environment Configuration**
    Create a `.env` file based on `.env.example`:
+
    ```bash
    cp .env.example .env
    ```
 
    Update the environment variables:
+
    ```env
    # API Configuration
    VITE_API_BASE_URL=https://your-api-endpoint.com
 
    # WhatsApp Configuration
-   VITE_WHATSAPP_NUMBER=923001234567
+   VITE_WHATSAPP_NUMBER=923315484042
 
    # Google Maps Configuration
    VITE_GOOGLE_MAP_EMBED_URL=your-google-maps-embed-url
@@ -98,6 +102,7 @@ src/
    ```
 
 4. **Start Development Server**
+
    ```bash
    npm run dev
    ```
@@ -120,11 +125,12 @@ VITE_API_BASE_URL=https://your-api-endpoint.com
 Expected API endpoint: `POST /contact`
 
 **Request payload:**
+
 ```json
 {
   "name": "John Doe",
   "email": "john@example.com",
-  "phone": "+92 300 1234567",
+  "phone": "+92 331 5484042",
   "subject": "general",
   "message": "Message content...",
   "file": "uploaded-file.pdf" // optional
@@ -136,10 +142,10 @@ Expected API endpoint: `POST /contact`
 Configure the WhatsApp number in your environment variables:
 
 ```env
-VITE_WHATSAPP_NUMBER=923001234567
+VITE_WHATSAPP_NUMBER=923315484042
 ```
 
-The WhatsApp button will automatically format the link as: `https://wa.me/923001234567?text=Hello%20SkywardVision`
+The WhatsApp button will automatically format the link as: `https://wa.me/923315484042?text=Hello%20SkywardVision`
 
 ### Google Maps Integration
 
@@ -186,6 +192,7 @@ All content can be easily updated through the constants file at `src/utils/const
 ## 📱 Pages Overview
 
 ### Home Page (`/`)
+
 - Hero section with CTA buttons
 - Services grid showcase
 - Portfolio preview
@@ -193,30 +200,35 @@ All content can be easily updated through the constants file at `src/utils/const
 - Contact form
 
 ### About Page (`/about`)
+
 - Company story and mission
 - Team member profiles
 - Values and achievements
 - Call-to-action sections
 
 ### Services Page (`/services`)
+
 - Detailed service descriptions
 - Features and benefits
 - Pricing information
 - Process explanation
 
 ### Portfolio Page (`/portfolio`)
+
 - Filterable project gallery
 - Detailed case studies
 - Project modal views
 - Results and metrics
 
 ### Contact Page (`/contact`)
+
 - Multiple contact methods
 - Interactive contact form
 - Office location map
 - FAQ section
 
 ### SMD Screen Page (`/smd-screen`)
+
 - Full-screen display mode
 - Auto-advancing slideshow
 - Keyboard controls
@@ -244,7 +256,7 @@ All content can be easily updated through the constants file at `src/utils/const
 The SMD Screen page (`/smd-screen`) provides a professional display solution:
 
 - **Auto-play**: Slides advance automatically every 5 seconds
-- **Keyboard Controls**: 
+- **Keyboard Controls**:
   - `Space`: Play/Pause
   - `Arrow Keys`: Navigate slides
   - `F`: Toggle fullscreen
@@ -312,8 +324,8 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 
 For support or questions about this project, please contact:
 
-- **Email**: info@skywardvision.com
-- **Phone**: +92 300 1234567
+- **Email**: support@skywardvision.com.pk
+- **Phone**: +92 331 5484042
 - **WhatsApp**: Available through the floating button on the website
 
 ---
