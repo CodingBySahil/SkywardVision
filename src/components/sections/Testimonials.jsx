@@ -161,19 +161,19 @@ const Testimonials = () => {
         {/* Stats Section */}
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
           <div>
-            <div className="text-3xl md:text-4xl font-bold text-primary mb-2">500+</div>
+            <div className="text-3xl md:text-4xl font-bold text-blue-500 mb-2">500+</div>
             <div className="text-gray-600">Happy Clients</div>
           </div>
           <div>
-            <div className="text-3xl md:text-4xl font-bold text-primary mb-2">98%</div>
+            <div className="text-3xl md:text-4xl font-bold text-blue-500 mb-2">98%</div>
             <div className="text-gray-600">Satisfaction Rate</div>
           </div>
           <div>
-            <div className="text-3xl md:text-4xl font-bold text-primary mb-2">1000+</div>
+            <div className="text-3xl md:text-4xl font-bold text-blue-500 mb-2">1000+</div>
             <div className="text-gray-600">Projects Delivered</div>
           </div>
           <div>
-            <div className="text-3xl md:text-4xl font-bold text-primary mb-2">5+</div>
+            <div className="text-3xl md:text-4xl font-bold text-blue-500 mb-2">5+</div>
             <div className="text-gray-600">Years Experience</div>
           </div>
         </div>
