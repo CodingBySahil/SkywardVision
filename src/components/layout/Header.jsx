@@ -28,6 +28,7 @@ const Header = () => {
   return (
     <>
       {/* Top Contact Bar */}
+      {/* changes */}
       <div className="hidden md:block bg-blackish text-white py-2">
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center text-sm">
