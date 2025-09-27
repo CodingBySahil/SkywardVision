@@ -5,6 +5,7 @@ import { HiMenu } from "react-icons/hi";
 import { HiPhone, HiMail } from "react-icons/hi";
 import { NAVIGATION, CONTACT_INFO, SITE_CONFIG } from "@/utils/constants";
 import { cn } from "@/lib/utils";
+import Logo from "../base/Logo";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -55,27 +56,12 @@ const Header = () => {
       <header
         className={cn(
           "sticky top-0 z-50 w-full border-b transition-all duration-300",
-          isScrolled
-            ? "bg-white/95 backdrop-blur-sm shadow-sm"
-            : "bg-white"
+          isScrolled ? "bg-white/95 backdrop-blur-sm shadow-sm" : "bg-white"
         )}
       >
         <div className="container mx-auto px-4">
           <div className="flex h-16 items-center justify-between">
-            {/* Logo */}
-            <Link to="/" className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-gradient-to-r from-sky-400 to-blue-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">S</span>
-              </div>
-              <div className="flex flex-col">
-                <span className="font-bold text-xl text-blackish">
-                  {SITE_CONFIG.name}
-                </span>
-                <span className="text-xs text-gray-500 hidden sm:block">
-                  {SITE_CONFIG.tagline}
-                </span>
-              </div>
-            </Link>
+            <Logo></Logo>
 
             {/* Desktop Nav */}
             <nav className="hidden md:flex items-center space-x-8">
