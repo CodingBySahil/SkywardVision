@@ -261,7 +261,7 @@ const Contact = () => {
                         width="100%"
                         height="300"
                         style={{ border: 0 }}
-                        allowFullScreen=""
+                        allowFullScreen={false}
                         loading="lazy"
                         referrerPolicy="no-referrer-when-downgrade"
                         title="SkywardVision Office Location"
