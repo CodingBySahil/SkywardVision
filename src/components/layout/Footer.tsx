@@ -1,24 +1,24 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { 
-  FaFacebookF, 
-  FaTwitter, 
-  FaInstagram, 
-  FaLinkedinIn, 
+import React from "react";
+import { Link } from "react-router-dom";
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaInstagram,
+  FaLinkedinIn,
   FaYoutube,
   FaMapMarkerAlt,
   FaPhone,
   FaEnvelope,
-  FaClock
-} from 'react-icons/fa';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { 
-  NAVIGATION, 
-  CONTACT_INFO, 
-  SOCIAL_LINKS, 
-  SITE_CONFIG 
-} from '@/utils/constants';
+  FaClock,
+} from "react-icons/fa";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import {
+  NAVIGATION,
+  CONTACT_INFO,
+  SOCIAL_LINKS,
+  SITE_CONFIG,
+} from "@/utils/constants";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -26,7 +26,7 @@ const Footer = () => {
   const handleNewsletterSubmit = (e) => {
     e.preventDefault();
     // Handle newsletter subscription
-    console.log('Newsletter subscription');
+    console.log("Newsletter subscription");
   };
 
   return (
@@ -46,11 +46,12 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-gray-300 text-sm leading-relaxed">
-              Diversified advertisement & marketing enterprise providing comprehensive 
-              business solutions across multiple sectors in Pakistan.
+              Diversified advertisement & marketing enterprise providing
+              comprehensive business solutions across multiple sectors in
+              Pakistan.
             </p>
             <div className="flex space-x-4">
-              <a 
+              <a
                 href={SOCIAL_LINKS.facebook}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -59,7 +60,7 @@ const Footer = () => {
               >
                 <FaFacebookF className="w-4 h-4" />
               </a>
-              <a 
+              <a
                 href={SOCIAL_LINKS.twitter}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -68,7 +69,7 @@ const Footer = () => {
               >
                 <FaTwitter className="w-4 h-4" />
               </a>
-              <a 
+              <a
                 href={SOCIAL_LINKS.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -77,7 +78,7 @@ const Footer = () => {
               >
                 <FaInstagram className="w-4 h-4" />
               </a>
-              <a 
+              <a
                 href={SOCIAL_LINKS.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -86,7 +87,7 @@ const Footer = () => {
               >
                 <FaLinkedinIn className="w-4 h-4" />
               </a>
-              <a 
+              <a
                 href={SOCIAL_LINKS.youtube}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -142,7 +143,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <FaPhone className="w-4 h-4 text-primary flex-shrink-0" />
-                <a 
+                <a
                   href={`tel:${CONTACT_INFO.phone}`}
                   className="text-sm text-gray-300 hover:text-primary transition-colors"
                 >
@@ -151,7 +152,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <FaEnvelope className="w-4 h-4 text-primary flex-shrink-0" />
-                <a 
+                <a
                   href={`mailto:${CONTACT_INFO.email}`}
                   className="text-sm text-gray-300 hover:text-primary transition-colors"
                 >
@@ -184,7 +185,7 @@ const Footer = () => {
                 className="bg-gray-800 border-gray-700 text-white placeholder-gray-400 focus:border-primary"
                 required
               />
-              <Button 
+              <Button
                 type="submit"
                 className="bg-gradient-to-r from-sky-400 to-blue-600 hover:from-sky-500 hover:to-blue-700 px-6"
               >
@@ -196,14 +197,19 @@ const Footer = () => {
 
         {/* Interactive Map */}
         <div className="mt-8">
-          <h4 className="font-semibold text-lg mb-4 text-center">Our Location</h4>
+          <h4 className="font-semibold text-lg mb-4 text-center">
+            Our Location
+          </h4>
           <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden">
             <iframe
-              src={import.meta.env.VITE_GOOGLE_MAP_EMBED_URL || "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.8574509655897!2d67.0099646149678!3d24.860966584065833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDUxJzM5LjUiTiA2N8KwMDAnNDMuOSJF!5e0!3m2!1sen!2s!4v1625000000000!5m2!1sen!2s"}
+              src={
+                import.meta.env.VITE_GOOGLE_MAP_EMBED_URL ||
+                "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.8574509655897!2d67.0099646149678!3d24.860966584065833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDUxJzM5LjUiTiA2N8KwMDAnNDMuOSJF!5e0!3m2!1sen!2s!4v1625000000000!5m2!1sen!2s"
+              }
               width="100%"
               height="250"
               style={{ border: 0 }}
-              allowFullScreen=""
+              allowFullScreen={false}
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               title="SkywardVision Office Location"
