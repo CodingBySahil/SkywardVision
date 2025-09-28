@@ -2,8 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Play } from "lucide-react";
-import Logo from "/public/assets/Logo/22.png";
-import HeroImg from "/public/assets/mockups/1.jpg";
+import Logo from "/assets/Logo/22.png";
+import HeroImg from "/assets/mockups/1.jpg";
 
 const Hero = () => {
   return (
