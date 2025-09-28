@@ -5,7 +5,7 @@ function Logo() {
   return (
     <Link to={"/"} className="w-[250px] h-auto">
       <img
-        src="/public/assets/main-logo.png"
+        src="/assets/main-logo.png"
         alt="SkywardVision Logo"
         className="object-contain h-auto w-auto"
       />
