@@ -20,17 +20,15 @@ const Hero = () => {
       </div>
 
       {/* Container */}
-      <div className="relative z-10 container mx-auto px-6 lg:px-12 py-16 grid lg:grid-cols-2 gap-12 items-center">
+      <div className="relative z-10 container mx-auto px-6 lg:px-12 py-16 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         {/* Left Content */}
         <div className="text-white space-y-6 animate-fade-in-up text-center lg:text-left">
-          <div className="flex items-center justify-center lg:justify-start gap-4">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight">
-              Elevating Brands to{" "}
-              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500">
-                New Heights
-              </span>
-            </h1>
-          </div>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight">
+            Elevating Brands to{" "}
+            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500">
+              New Heights
+            </span>
+          </h1>
 
           <p className="text-lg md:text-xl text-blue-100 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
             SkywardVision is your trusted partner for comprehensive
@@ -93,12 +91,12 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Right Image */}
-        <div className="relative flex justify-center lg:justify-end">
+        {/* Right Image (Hidden on small screens) */}
+        <div className="relative flex justify-center lg:justify-end hidden md:flex">
           <img
             src={Logo}
             alt="Advertising Illustration"
-            className="w-full max-w-md lg:max-w-lg drop-shadow-2xl animate-fade-in"
+            className="w-full max-w-xs md:max-w-sm lg:max-w-lg drop-shadow-2xl animate-fade-in"
           />
         </div>
       </div>

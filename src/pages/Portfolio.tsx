@@ -19,178 +19,120 @@ import logoImg from "/assets/mockups/3.jpg";
 const Portfolio = () => {
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [selectedProject, setSelectedProject] = useState(null);
-
   const portfolioItems = [
     {
       id: 1,
-      title: "Digital Billboard Campaign",
-      client: "Tech Solutions Ltd",
+      title: "Citywide SMD Screen Campaign",
+      client: "MegaMart",
       category: "outdoor",
       year: "2024",
       image:
-        "https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800",
-      tags: ["Billboard", "Brand Awareness", "Digital"],
+        "https://plus.unsplash.com/premium_photo-1747810785255-bdce35e7d69f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Y2l0eSUyMHdpZGUlMjBzY3JlZW58ZW58MHx8MHx8fDA%3D",
+      tags: ["SMD Screens", "Outdoor Advertising", "Retail Growth"],
       description:
-        "Large-scale digital billboard campaign that increased brand visibility by 250% in major city locations across Karachi and Lahore.",
+        "High-impact SMD screen campaign across prime city spots, boosting MegaMart’s seasonal sales with real-time product highlights and brand recall.",
       results: [
-        "250% increase in brand visibility",
-        "35% boost in website traffic",
-        "15% increase in sales",
+        "300% increase in store footfall",
+        "2.5M+ daily impressions",
+        "40% sales boost during campaign",
       ],
-      duration: "3 months",
-      budget: "PKR 500,000",
+      duration: "2 months",
+      budget: "PKR 700,000",
     },
     {
       id: 2,
-      title: "Social Media Marketing Campaign",
-      client: "Green Valley Restaurant",
-      category: "digital",
+      title: "Shopping Mall Digital Ads",
+      client: "Star Mall",
+      category: "indoor",
       year: "2024",
       image:
-        "https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=800",
-      tags: ["Social Media", "Content Creation", "Engagement"],
+        "https://plus.unsplash.com/premium_photo-1679690708684-97aa10d30a80?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8bGFyZ2UlMjBzY3JlZW58ZW58MHx8MHx8fDA%3D",
+      tags: ["Indoor Advertising", "Digital Screens", "Retail"],
       description:
-        "Comprehensive social media strategy that boosted online engagement by 400% and increased foot traffic significantly.",
+        "Strategically placed SMD screens across mall corridors that promoted top tenants, boosting both retail sales and visitor engagement.",
       results: [
-        "400% increase in engagement",
-        "60% growth in followers",
-        "25% increase in foot traffic",
+        "50% increase in tenant sales",
+        "35% rise in foot traffic",
+        "Longer average stay duration",
       ],
       duration: "6 months",
-      budget: "PKR 150,000",
+      budget: "PKR 550,000",
     },
     {
       id: 3,
-      title: "Luxury Property Marketing",
-      client: "Urban Properties",
-      category: "real-estate",
+      title: "Luxury Brand Billboard Launch",
+      client: "Aura Perfumes",
+      category: "outdoor",
       year: "2024",
       image:
-        "https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg?auto=compress&cs=tinysrgb&w=800",
-      tags: ["Property Marketing", "Luxury", "Sales"],
+        "https://images.unsplash.com/photo-1635834241720-12d908471b0a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bHV4YXJ5JTIwYnJhbmQlMjBzY3JlZW58ZW58MHx8MHx8fDA%3D",
+      tags: ["Billboards", "Luxury Advertising", "Brand Awareness"],
       description:
-        "Premium property marketing campaign that achieved 90% sales rate within 3 months of launch for a luxury development.",
+        "Premium billboard and SMD screen launch campaign across high-end areas, positioning Aura Perfumes as a luxury lifestyle brand.",
       results: [
-        "90% sales rate achieved",
-        "3-month completion time",
-        "20% above asking price",
+        "Brand recall increased by 220%",
+        "90% product sell-out in first 3 months",
+        "Expanded into 3 new cities",
       ],
       duration: "3 months",
-      budget: "PKR 300,000",
-    },
-    {
-      id: 4,
-      title: "Farm Management System",
-      client: "Modern Dairy Farms",
-      category: "dairy",
-      year: "2023",
-      image:
-        "https://images.pexels.com/photos/422218/pexels-photo-422218.jpeg?auto=compress&cs=tinysrgb&w=800",
-      tags: ["Farm Management", "Technology", "Efficiency"],
-      description:
-        "Implemented modern farm management systems that increased milk production efficiency by 35% and reduced operational costs.",
-      results: [
-        "35% increase in efficiency",
-        "20% cost reduction",
-        "Improved quality control",
-      ],
-      duration: "4 months",
-      budget: "PKR 800,000",
-    },
-    {
-      id: 5,
-      title: "Fleet Optimization Solution",
-      client: "Swift Logistics",
-      category: "transportation",
-      year: "2023",
-      image:
-        "https://images.pexels.com/photos/1427107/pexels-photo-1427107.jpeg?auto=compress&cs=tinysrgb&w=800",
-      tags: ["Fleet Management", "Logistics", "Optimization"],
-      description:
-        "Transportation fleet optimization that reduced operational costs by 30% and improved delivery times across the supply chain.",
-      results: [
-        "30% cost reduction",
-        "40% faster deliveries",
-        "Improved customer satisfaction",
-      ],
-      duration: "5 months",
-      budget: "PKR 600,000",
-    },
-    {
-      id: 6,
-      title: "Brand Identity Redesign",
-      client: "Innovative Startups",
-      category: "digital",
-      year: "2023",
-      image:
-        "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=800",
-      tags: ["Branding", "Design", "Identity"],
-      description:
-        "Complete brand identity overhaul for multiple startups, establishing strong market presence and recognition.",
-      results: [
-        "3x brand recognition",
-        "150% increase in leads",
-        "Award-winning design",
-      ],
-      duration: "2 months",
-      budget: "PKR 200,000",
-    },
-    {
-      id: 7,
-      title: "Shopping Mall Advertising",
-      client: "Metro Shopping Center",
-      category: "outdoor",
-      year: "2023",
-      image:
-        "https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800",
-      tags: ["Indoor Advertising", "Retail", "Foot Traffic"],
-      description:
-        "Strategic indoor advertising placement that increased tenant sales by 45% and improved mall foot traffic.",
-      results: [
-        "45% increase in tenant sales",
-        "30% more foot traffic",
-        "Extended visitor stay time",
-      ],
-      duration: "12 months",
-      budget: "PKR 750,000",
-    },
-    {
-      id: 8,
-      title: "E-commerce Growth Strategy",
-      client: "Fashion Forward",
-      category: "digital",
-      year: "2023",
-      image:
-        "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800",
-      tags: ["E-commerce", "Growth", "Online Sales"],
-      description:
-        "Comprehensive e-commerce strategy that transformed a local fashion brand into a leading online retailer.",
-      results: [
-        "500% increase in online sales",
-        "200% growth in customer base",
-        "National market expansion",
-      ],
-      duration: "8 months",
       budget: "PKR 400,000",
     },
     {
-      id: 9,
-      title: "Industrial Property Development",
-      client: "Prime Industrial Parks",
-      category: "real-estate",
-      year: "2022",
+      id: 4,
+      title: "Food Chain Promotion",
+      client: "Burger X",
+      category: "outdoor",
+      year: "2023",
       image:
-        "https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=800",
-      tags: ["Industrial", "Development", "B2B Marketing"],
+        "https://images.pexels.com/photos/279218/pexels-photo-279218.jpeg?auto=compress&cs=tinysrgb&w=800",
+      tags: ["Restaurant Ads", "SMD Screens", "Engagement"],
       description:
-        "Industrial property development marketing that achieved full occupancy within 6 months of project completion.",
+        "Vibrant outdoor digital screen promotions showcasing new product launches and real-time offers for a fast-food chain.",
       results: [
-        "100% occupancy achieved",
-        "6-month leasing timeline",
-        "Premium rental rates",
+        "70% growth in customer traffic",
+        "150% increase in social mentions",
+        "20% higher upsell conversions",
       ],
-      duration: "6 months",
-      budget: "PKR 450,000",
+      duration: "4 months",
+      budget: "PKR 300,000",
+    },
+    {
+      id: 5,
+      title: "Corporate Awareness Drive",
+      client: "SkyTech Solutions",
+      category: "digital",
+      year: "2023",
+      image:
+        "https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=800",
+      tags: ["Corporate Branding", "Digital Campaigns", "SMD Screens"],
+      description:
+        "A large-scale awareness campaign combining outdoor screens and indoor displays to showcase SkyTech’s digital solutions portfolio.",
+      results: [
+        "4x growth in brand inquiries",
+        "200% more B2B leads",
+        "Improved corporate credibility",
+      ],
+      duration: "5 months",
+      budget: "PKR 650,000",
+    },
+    {
+      id: 6,
+      title: "Fashion Brand Launch",
+      client: "Urban Wear",
+      category: "outdoor",
+      year: "2023",
+      image:
+        "https://images.unsplash.com/photo-1740377016309-ec06ae233f7b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fEZhc2hpb24lMjBCcmFuZCUyMExhdW5jaCUyMHNjcmVlbnxlbnwwfHwwfHx8MA%3D%3D",
+      tags: ["Fashion Ads", "Billboards", "Youth Marketing"],
+      description:
+        "Billboards and mall displays featuring Urban Wear’s new collection, driving buzz among younger audiences.",
+      results: [
+        "400% increase in social engagement",
+        "National-level brand visibility",
+        "Sold out flagship items in 2 weeks",
+      ],
+      duration: "2 months",
+      budget: "PKR 350,000",
     },
   ];
 
@@ -273,50 +215,89 @@ const Portfolio = () => {
         </section>
 
         {/* Portfolio Stats */}
-        <section className="py-12 bg-white border-b">
-          <div className="container mx-auto px-4">
+        <section className="py-20 bg-gradient-to-b from-sky-50 to-white relative overflow-hidden">
+          {/* Decorative Blobs */}
+          <div className="absolute inset-0">
+            <div className="absolute top-8 left-10 w-40 h-40 bg-sky-400/10 rounded-full blur-3xl animate-pulse"></div>
+            <div className="absolute bottom-12 right-10 w-56 h-56 bg-blue-600/10 rounded-full blur-3xl animate-pulse delay-500"></div>
+          </div>
+
+          <div className="relative z-10 container mx-auto px-6 lg:px-12">
+            {/* Intro Section */}
+            <div className="max-w-3xl mx-auto text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-extrabold text-[#101727] mb-4">
+                Proven Results, Measurable Impact
+              </h2>
+              <p className="text-lg text-gray-600 leading-relaxed">
+                At{" "}
+                <span className="font-semibold text-blue-600">
+                  SkywardVision
+                </span>
+                , our SMD advertising solutions don’t just shine — they deliver
+                real outcomes. From boosting visibility to increasing ROI, our
+                results speak louder than words.
+              </p>
+            </div>
+
+            {/* Stats Grid */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-              <div>
-                <div className="text-3xl font-bold text-primary mb-2">50+</div>
-                <div className="text-gray-600">Projects Completed</div>
+              <div className="p-6 bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2">
+                <div className="text-4xl font-extrabold bg-gradient-to-r from-sky-400 to-blue-600 bg-clip-text text-transparent mb-2">
+                  50+
+                </div>
+                <div className="text-gray-700 font-medium">
+                  Projects Completed
+                </div>
               </div>
-              <div>
-                <div className="text-3xl font-bold text-primary mb-2">5</div>
-                <div className="text-gray-600">Industries Served</div>
+
+              <div className="p-6 bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2">
+                <div className="text-4xl font-extrabold bg-gradient-to-r from-sky-400 to-blue-600 bg-clip-text text-transparent mb-2">
+                  5
+                </div>
+                <div className="text-gray-700 font-medium">
+                  Industries Served
+                </div>
               </div>
-              <div>
-                <div className="text-3xl font-bold text-primary mb-2">98%</div>
-                <div className="text-gray-600">Client Satisfaction</div>
+
+              <div className="p-6 bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2">
+                <div className="text-4xl font-extrabold bg-gradient-to-r from-sky-400 to-blue-600 bg-clip-text text-transparent mb-2">
+                  98%
+                </div>
+                <div className="text-gray-700 font-medium">
+                  Client Satisfaction
+                </div>
               </div>
-              <div>
-                <div className="text-3xl font-bold text-primary mb-2">200%</div>
-                <div className="text-gray-600">Average ROI Increase</div>
+
+              <div className="p-6 bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2">
+                <div className="text-4xl font-extrabold bg-gradient-to-r from-sky-400 to-blue-600 bg-clip-text text-transparent mb-2">
+                  200%
+                </div>
+                <div className="text-gray-700 font-medium">
+                  Average ROI Increase
+                </div>
               </div>
             </div>
           </div>
         </section>
 
         {/* Filter Section */}
-        <section className="py-8 bg-gray-50 border-b">
+        <section className="py-10 bg-[#101727] border-b border-white/10">
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap items-center justify-center gap-4">
-              <div className="flex items-center space-x-2 text-gray-700">
-                <Filter className="w-5 h-5" />
+              <div className="flex items-center space-x-2 text-gray-300">
+                <Filter className="w-5 h-5 text-sky-400" />
                 <span className="font-medium">Filter by category:</span>
               </div>
               {PORTFOLIO_CATEGORIES.map((category) => (
                 <Button
                   key={category.id}
-                  variant={
-                    selectedCategory === category.id ? "default" : "outline"
-                  }
                   size="sm"
                   onClick={() => setSelectedCategory(category.id)}
-                  className={
+                  className={`transition-all duration-300 rounded-full ${
                     selectedCategory === category.id
-                      ? "bg-gradient-to-r from-sky-400 to-blue-600"
-                      : "hover:bg-primary hover:text-white"
-                  }
+                      ? "bg-gradient-to-r from-sky-400 to-blue-600 text-white shadow-lg scale-105"
+                      : "border border-sky-400/40 text-sky-300 hover:bg-gradient-to-r hover:from-sky-400 hover:to-blue-600 hover:text-white"
+                  }`}
                 >
                   {category.name}
                 </Button>
@@ -326,61 +307,67 @@ const Portfolio = () => {
         </section>
 
         {/* Portfolio Grid */}
-        <section className="py-16 lg:py-24 bg-gray-50">
+        <section className="py-16 lg:py-24 bg-[#101727]">
           <div className="container mx-auto px-4">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
               {filteredPortfolio.map((item, index) => (
                 <Card
                   key={item.id}
-                  className="group hover:shadow-xl transition-all duration-300 border-0 shadow-md overflow-hidden bg-white hover:-translate-y-2"
+                  className="group relative border-0 rounded-2xl overflow-hidden bg-white/5 backdrop-blur-md hover:shadow-2xl hover:scale-[1.02] transition-all duration-500"
                 >
+                  {/* Project Image */}
                   <div className="relative overflow-hidden">
                     <img
                       src={item.image}
                       alt={item.title}
-                      className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
+                      className="w-full h-56 object-cover transition-transform duration-700 group-hover:scale-110"
                       loading={index < 6 ? "eager" : "lazy"}
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      <div className="absolute bottom-4 left-4 right-4">
+
+                    {/* Overlay on hover */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                      <div className="absolute bottom-5 left-5 right-5">
                         <Dialog>
                           <DialogTrigger asChild>
                             <Button
                               size="sm"
-                              className="w-full bg-white/90 text-blackish hover:bg-white"
+                              className="w-full bg-gradient-to-r from-sky-400 to-blue-600 text-white font-medium hover:opacity-90"
                               onClick={() => setSelectedProject(item)}
                             >
                               <Eye className="w-4 h-4 mr-2" />
                               View Case Study
                             </Button>
                           </DialogTrigger>
-                          <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
+
+                          {/* Dialog Content */}
+                          <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto bg-[#101727] text-white rounded-2xl">
                             <DialogHeader>
-                              <DialogTitle className="text-2xl">
+                              <DialogTitle className="text-2xl font-bold text-sky-400">
                                 {item.title}
                               </DialogTitle>
-                              <DialogDescription className="text-base">
+                              <DialogDescription className="text-gray-300">
                                 {item.client} • {item.year} • {item.duration} •{" "}
                                 {item.budget}
                               </DialogDescription>
                             </DialogHeader>
+
                             <div className="space-y-6">
                               <img
                                 src={item.image}
                                 alt={item.title}
-                                className="w-full h-64 object-cover rounded-lg"
+                                className="w-full h-64 object-cover rounded-xl"
                               />
 
-                              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                                 <div>
-                                  <h4 className="font-semibold text-lg mb-3">
+                                  <h4 className="font-semibold text-xl mb-3 text-sky-300">
                                     Project Overview
                                   </h4>
-                                  <p className="text-gray-600 leading-relaxed mb-4">
+                                  <p className="text-gray-400 leading-relaxed mb-4">
                                     {item.description}
                                   </p>
 
-                                  <div className="space-y-2 mb-4">
+                                  <div className="space-y-2 mb-4 text-gray-300">
                                     <div>
                                       <strong>Client:</strong> {item.client}
                                     </div>
@@ -397,7 +384,7 @@ const Portfolio = () => {
                                       <Badge
                                         key={idx}
                                         variant="secondary"
-                                        className="text-xs"
+                                        className="bg-sky-400/20 text-sky-300 border border-sky-400/40 text-xs"
                                       >
                                         {tag}
                                       </Badge>
@@ -406,17 +393,17 @@ const Portfolio = () => {
                                 </div>
 
                                 <div>
-                                  <h4 className="font-semibold text-lg mb-3">
+                                  <h4 className="font-semibold text-xl mb-3 text-sky-300">
                                     Key Results
                                   </h4>
-                                  <div className="space-y-2 mb-6">
+                                  <div className="space-y-3">
                                     {item.results?.map((result, idx) => (
                                       <div
                                         key={idx}
                                         className="flex items-start space-x-2"
                                       >
-                                        <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
-                                        <span className="text-gray-700">
+                                        <div className="w-2 h-2 bg-green-400 rounded-full mt-2"></div>
+                                        <span className="text-gray-300">
                                           {result}
                                         </span>
                                       </div>
@@ -425,8 +412,11 @@ const Portfolio = () => {
                                 </div>
                               </div>
 
-                              <div className="flex flex-col sm:flex-row gap-4 pt-4 border-t">
-                                <Button asChild className="flex-1">
+                              <div className="flex flex-col sm:flex-row gap-4 pt-4 border-t border-white/10">
+                                <Button
+                                  asChild
+                                  className="flex-1 bg-gradient-to-r from-sky-400 to-blue-600 text-white"
+                                >
                                   <Link to="/contact">
                                     Start Similar Project
                                     <ExternalLink className="w-4 h-4 ml-2" />
@@ -435,7 +425,7 @@ const Portfolio = () => {
                                 <Button
                                   asChild
                                   variant="outline"
-                                  className="flex-1"
+                                  className="flex-1 border-sky-400/40 text-sky-300 hover:bg-sky-400/20"
                                 >
                                   <Link to="/services">View Our Services</Link>
                                 </Button>
@@ -445,54 +435,58 @@ const Portfolio = () => {
                         </Dialog>
                       </div>
                     </div>
-                    <Badge
-                      className="absolute top-4 left-4 bg-white/90 text-blackish"
-                      variant="secondary"
-                    >
+
+                    {/* Category Badge */}
+                    <Badge className="absolute top-4 left-4 bg-sky-400/90 text-white shadow-lg">
                       {PORTFOLIO_CATEGORIES.find(
                         (cat) => cat.id === item.category
                       )?.name || "Project"}
                     </Badge>
                   </div>
 
+                  {/* Card Content */}
                   <CardContent className="p-6">
-                    <h3 className="font-bold text-lg text-blackish mb-2 group-hover:text-primary transition-colors">
+                    <h3 className="font-bold text-lg text-white mb-2 group-hover:text-sky-400 transition-colors">
                       {item.title}
                     </h3>
-                    <p className="text-gray-600 text-sm mb-3">
+                    <p className="text-gray-400 text-sm mb-3">
                       {item.client} • {item.year}
                     </p>
-                    <p className="text-gray-600 text-sm mb-4 line-clamp-2">
+                    <p className="text-gray-300 text-sm mb-4 line-clamp-2">
                       {item.description.substring(0, 100)}...
                     </p>
 
-                    {/* Key Results Preview */}
+                    {/* Key Result Preview */}
                     {item.results && item.results.length > 0 && (
                       <div className="mb-4">
-                        <h4 className="font-semibold text-sm text-blackish mb-2">
+                        <h4 className="font-semibold text-sm text-sky-300 mb-2">
                           Key Result:
                         </h4>
                         <div className="flex items-start space-x-2">
-                          <div className="w-2 h-2 bg-green-500 rounded-full mt-1.5 flex-shrink-0"></div>
-                          <span className="text-sm text-gray-700">
+                          <div className="w-2 h-2 bg-green-400 rounded-full mt-1.5"></div>
+                          <span className="text-sm text-gray-300">
                             {item.results[0]}
                           </span>
                         </div>
                       </div>
                     )}
 
+                    {/* Tags */}
                     <div className="flex flex-wrap gap-2">
                       {item.tags.slice(0, 2).map((tag, idx) => (
                         <Badge
                           key={idx}
                           variant="outline"
-                          className="text-xs border-primary/20 text-primary"
+                          className="text-xs border-sky-400/40 text-sky-300"
                         >
                           {tag}
                         </Badge>
                       ))}
                       {item.tags.length > 2 && (
-                        <Badge variant="outline" className="text-xs">
+                        <Badge
+                          variant="outline"
+                          className="text-xs text-gray-400 border-gray-600"
+                        >
                           +{item.tags.length - 2}
                         </Badge>
                       )}
@@ -502,16 +496,15 @@ const Portfolio = () => {
               ))}
             </div>
 
-            {/* Load More Button */}
+            {/* No Projects */}
             {filteredPortfolio.length === 0 && (
               <div className="text-center py-12">
-                <p className="text-gray-600 text-lg">
+                <p className="text-gray-400 text-lg">
                   No projects found in this category.
                 </p>
                 <Button
                   onClick={() => setSelectedCategory("all")}
-                  className="mt-4"
-                  variant="outline"
+                  className="mt-4 bg-gradient-to-r from-sky-400 to-blue-600 text-white"
                 >
                   View All Projects
                 </Button>
