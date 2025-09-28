@@ -22,7 +22,7 @@ const Home = () => {
         <ServicesGrid />
         <PortfolioGallery />
         <Testimonials />
-        <ContactForm />
+        {/* <ContactForm /> */}
       </main>
     </>
   );

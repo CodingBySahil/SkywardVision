@@ -121,27 +121,36 @@ const Contact = () => {
         </section>
 
         {/* Contact Info Cards */}
-        <section className="py-16 bg-gray-50">
-          <div className="container mx-auto px-4">
+
+        <section className="relative py-24 bg-[#101727] overflow-hidden text-white">
+          {/* Floating Gradient Backgrounds */}
+          <div className="absolute inset-0">
+            <div className="absolute top-10 left-10 w-40 h-40 bg-gradient-to-r from-sky-400 to-blue-600 opacity-20 rounded-full blur-3xl animate-pulse"></div>
+            <div className="absolute bottom-20 right-10 w-52 h-52 bg-blue-600/20 rounded-full blur-2xl animate-pulse delay-700"></div>
+            <div className="absolute -top-20 left-1/2 -translate-x-1/2 w-[28rem] h-[28rem] bg-gradient-to-r from-blue-600 to-sky-400 opacity-10 rounded-full blur-3xl"></div>
+          </div>
+
+          <div className="relative z-10 container mx-auto px-6 lg:px-12">
             <div className="max-w-6xl mx-auto">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+              {/* Contact Options */}
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
                 {/* Phone */}
-                <Card className="border-0 shadow-xl bg-white text-center hover:shadow-2xl transition-shadow duration-300">
+                <Card className="border border-white/10 bg-white/5 backdrop-blur-md text-center rounded-2xl hover:scale-[1.03] transition-transform duration-500">
                   <CardHeader>
-                    <div className="w-16 h-16 bg-gradient-to-r from-sky-400 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                    <div className="w-16 h-16 bg-gradient-to-r from-sky-400 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
                       <Phone className="w-8 h-8 text-white" />
                     </div>
-                    <CardTitle className="text-xl text-blackish">
+                    <CardTitle className="text-xl text-white">
                       Call Us
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-gray-600 mb-4">
+                    <p className="text-gray-300 mb-4">
                       Speak directly with our team for immediate assistance.
                     </p>
                     <a
                       href={`tel:${CONTACT_INFO.phone}`}
-                      className="text-primary font-semibold text-lg hover:underline"
+                      className="text-sky-400 font-semibold text-lg hover:underline"
                     >
                       {CONTACT_INFO.phone}
                     </a>
@@ -149,22 +158,22 @@ const Contact = () => {
                 </Card>
 
                 {/* Email */}
-                <Card className="border-0 shadow-xl bg-white text-center hover:shadow-2xl transition-shadow duration-300">
+                <Card className="border border-white/10 bg-white/5 backdrop-blur-md text-center rounded-2xl hover:scale-[1.03] transition-transform duration-500">
                   <CardHeader>
-                    <div className="w-16 h-16 bg-gradient-to-r from-sky-400 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                    <div className="w-16 h-16 bg-gradient-to-r from-sky-400 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
                       <Mail className="w-8 h-8 text-white" />
                     </div>
-                    <CardTitle className="text-xl text-blackish">
+                    <CardTitle className="text-xl text-white">
                       Email Us
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-gray-600 mb-4">
+                    <p className="text-gray-300 mb-4">
                       Send us a detailed message about your project needs.
                     </p>
                     <a
                       href={`mailto:${CONTACT_INFO.email}`}
-                      className="text-primary font-semibold text-lg hover:underline"
+                      className="text-sky-400 font-semibold text-lg hover:underline"
                     >
                       {CONTACT_INFO.email}
                     </a>
@@ -172,24 +181,24 @@ const Contact = () => {
                 </Card>
 
                 {/* WhatsApp */}
-                <Card className="border-0 shadow-xl bg-white text-center hover:shadow-2xl transition-shadow duration-300">
+                <Card className="border border-white/10 bg-white/5 backdrop-blur-md text-center rounded-2xl hover:scale-[1.03] transition-transform duration-500">
                   <CardHeader>
-                    <div className="w-16 h-16 bg-gradient-to-r from-green-400 to-green-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                    <div className="w-16 h-16 bg-gradient-to-r from-green-400 to-green-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
                       <MessageCircle className="w-8 h-8 text-white" />
                     </div>
-                    <CardTitle className="text-xl text-blackish">
+                    <CardTitle className="text-xl text-white">
                       WhatsApp
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-gray-600 mb-4">
+                    <p className="text-gray-300 mb-4">
                       Quick chat for instant responses and support.
                     </p>
                     <a
                       href={`https://wa.me/${CONTACT_INFO.whatsapp}?text=Hello%20SkywardVision%2C%20I%20would%20like%20to%20inquire%20about%20your%20services.`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-green-600 font-semibold text-lg hover:underline"
+                      className="text-green-400 font-semibold text-lg hover:underline"
                     >
                       Chat Now
                     </a>
@@ -197,46 +206,44 @@ const Contact = () => {
                 </Card>
               </div>
 
-              {/* Office Info */}
+              {/* Office Info & Map */}
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
                 {/* Contact Details */}
-                <Card className="border-0 shadow-xl bg-white">
+                <Card className="border border-white/10 bg-white/5 backdrop-blur-md rounded-2xl hover:scale-[1.02] transition-transform duration-500">
                   <CardHeader>
-                    <CardTitle className="text-2xl text-blackish flex items-center space-x-2">
-                      <MapPin className="w-6 h-6 text-primary" />
+                    <CardTitle className="text-2xl text-white flex items-center space-x-2">
+                      <MapPin className="w-6 h-6 text-sky-400" />
                       <span>Visit Our Office</span>
                     </CardTitle>
                   </CardHeader>
-                  <CardContent className="space-y-6">
+                  <CardContent className="space-y-6 text-gray-300">
                     <div>
-                      <h4 className="font-semibold text-blackish mb-2">
+                      <h4 className="font-semibold text-white mb-2">
                         Address:
                       </h4>
-                      <p className="text-gray-600">
-                        {CONTACT_INFO.address.full}
-                      </p>
+                      <p>{CONTACT_INFO.address.full}</p>
                     </div>
 
                     <div>
-                      <h4 className="font-semibold text-blackish mb-2 flex items-center space-x-2">
-                        <Clock className="w-5 h-5 text-primary" />
+                      <h4 className="font-semibold text-white mb-2 flex items-center space-x-2">
+                        <Clock className="w-5 h-5 text-sky-400" />
                         <span>Business Hours:</span>
                       </h4>
-                      <div className="space-y-1 text-gray-600">
+                      <div className="space-y-1">
                         <p>{CONTACT_INFO.hours.weekdays}</p>
                         <p>{CONTACT_INFO.hours.saturday}</p>
-                        <p className="text-red-600">
+                        <p className="text-red-400">
                           {CONTACT_INFO.hours.sunday}
                         </p>
                       </div>
                     </div>
 
                     <div>
-                      <h4 className="font-semibold text-blackish mb-2 flex items-center space-x-2">
-                        <Headphones className="w-5 h-5 text-primary" />
+                      <h4 className="font-semibold text-white mb-2 flex items-center space-x-2">
+                        <Headphones className="w-5 h-5 text-sky-400" />
                         <span>24/7 Support:</span>
                       </h4>
-                      <p className="text-gray-600">
+                      <p>
                         Emergency support available via WhatsApp and email for
                         existing clients.
                       </p>
@@ -245,9 +252,9 @@ const Contact = () => {
                 </Card>
 
                 {/* Map */}
-                <Card className="border-0 shadow-xl bg-white overflow-hidden">
+                <Card className="border border-white/10 bg-white/5 backdrop-blur-md rounded-2xl overflow-hidden hover:scale-[1.02] transition-transform duration-500">
                   <CardHeader>
-                    <CardTitle className="text-2xl text-blackish">
+                    <CardTitle className="text-2xl text-white">
                       Find Us Here
                     </CardTitle>
                   </CardHeader>
@@ -276,68 +283,10 @@ const Contact = () => {
         </section>
 
         {/* Contact Form */}
-        <ContactForm></ContactForm>
+        <ContactForm />
 
         {/* Faqs Section */}
-        <FaqsSection></FaqsSection>
-
-        {/* FAQ Section */}
-        {/* <section className="py-16 lg:py-24 bg-white">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
-              <div className="text-center mb-16">
-                <Badge variant="outline" className="mb-4">
-                  Frequently Asked Questions
-                </Badge>
-                <h2 className="text-3xl md:text-4xl font-bold text-blackish mb-6">
-                  Got Questions? We've Got Answers
-                </h2>
-              </div>
-
-              <div className="space-y-8">
-                {[
-                  {
-                    question: "What services does SkywardVision offer?",
-                    answer:
-                      "We offer comprehensive services including outdoor advertising, digital marketing, real estate solutions, dairy farming consultancy, and transportation services. Our diversified approach allows us to serve multiple business sectors.",
-                  },
-                  {
-                    question: "How long does it take to complete a project?",
-                    answer:
-                      "Project timelines vary depending on scope and complexity. Simple campaigns can be launched within 2-3 weeks, while comprehensive solutions may take 2-3 months. We provide detailed timelines during our initial consultation.",
-                  },
-                  {
-                    question: "Do you work with businesses of all sizes?",
-                    answer:
-                      "Yes! We work with startups, SMEs, and large corporations. Our scalable solutions are designed to meet the unique needs and budgets of businesses at every stage of growth.",
-                  },
-                  {
-                    question:
-                      "What makes SkywardVision different from other agencies?",
-                    answer:
-                      "Our unique diversified approach sets us apart. We're not just an advertising agency – we offer expertise across multiple sectors including real estate, dairy farming, and transportation, providing comprehensive business solutions under one roof.",
-                  },
-                  {
-                    question: "How do you measure success?",
-                    answer:
-                      "We focus on measurable results including increased brand visibility, website traffic, lead generation, sales growth, and ROI. Each project includes detailed analytics and reporting to track performance.",
-                  },
-                ].map((faq, index) => (
-                  <Card key={index} className="border-0 shadow-lg bg-gray-50">
-                    <CardContent className="pt-6">
-                      <h4 className="font-bold text-lg text-blackish mb-3">
-                        {faq.question}
-                      </h4>
-                      <p className="text-gray-600 leading-relaxed">
-                        {faq.answer}
-                      </p>
-                    </CardContent>
-                  </Card>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section> */}
+        <FaqsSection />
       </main>
     </>
   );
