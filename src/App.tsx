@@ -16,11 +16,8 @@ const App = () => {
   return (
     <HelmetProvider>
       <Router>
-        <div className="min-h-screen bg-white container">
+        <div className="min-h-screen bg-white ">
           <Routes>
-            {/* SMD Screen route without header/footer */}
-            {/* <Route path="/smd-screen" element={<SmdScreen />} /> */}
-
             {/* All other routes with header/footer */}
             <Route
               path="/*"

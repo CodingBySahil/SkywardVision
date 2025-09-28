@@ -78,79 +78,79 @@ export const NAVIGATION = {
 // Services data
 export const SERVICES = [
   {
-    id: "outdoor",
-    name: "Outdoor Advertising",
+    id: "smd-outdoor",
+    name: "SMD Outdoor Advertising",
     icon: "MdOutdoorGrill",
     description:
-      "Strategic billboard and outdoor media placements to maximize brand visibility and reach your target audience effectively.",
+      "High-resolution outdoor SMD screens placed at prime locations to capture massive audience attention day and night.",
     features: [
-      "Billboard Design",
-      "Strategic Placement",
-      "Campaign Management",
-      "ROI Tracking",
+      "Full HD/4K LED Displays",
+      "Strategic City Locations",
+      "Dynamic Content Scheduling",
+      "24/7 Brand Visibility",
     ],
     image:
-      "https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://images.unsplash.com/photo-1628468033761-125b565aaac7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzJ8fGFkdmVydGlzaW5nJTIwc2NycmVuc3xlbnwwfHwwfHx8MA%3D%3D",
   },
   {
-    id: "digital",
-    name: "Digital Marketing",
+    id: "smd-digital",
+    name: "Digital SMD Marketing",
     icon: "MdDevices",
     description:
-      "Comprehensive digital marketing solutions including SEO, social media, PPC, and content marketing to grow your online presence.",
+      "Engage your customers with digital SMD campaigns on indoor and outdoor LED screens for maximum interactivity and reach.",
     features: [
-      "SEO Optimization",
-      "Social Media Management",
-      "PPC Campaigns",
-      "Content Strategy",
+      "Indoor LED Screens",
+      "Mall & Event Advertising",
+      "Dynamic Motion Ads",
+      "High Engagement Rates",
     ],
     image:
-      "https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://images.unsplash.com/photo-1610376096719-9819725cfb00?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTV8fERpZ2l0YWwlMjBzY3JlZW5zfGVufDB8fDB8fHww",
   },
   {
-    id: "real-estate",
-    name: "Real Estate",
+    id: "smd-realestate",
+    name: "Real Estate SMD Ads",
     icon: "MdHome",
     description:
-      "Professional real estate marketing and development services to help you buy, sell, or develop properties efficiently.",
+      "Showcase properties with vibrant SMD video ads that attract buyers, investors, and stakeholders instantly.",
     features: [
-      "Property Marketing",
-      "Development Consulting",
-      "Investment Analysis",
-      "Market Research",
+      "Property Showreels",
+      "Prime Location Displays",
+      "Investor Targeting",
+      "Virtual Walkthrough Ads",
     ],
     image:
-      "https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://images.unsplash.com/photo-1661730874728-b99850e4b3e1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fGJyYW5kJTIwcHJvbW90aW9uJTIwc2NyZWVuc3xlbnwwfHwwfHx8MA%3D%3D",
   },
   {
-    id: "dairy",
-    name: "Dairy Farming",
+    id: "smd-retail",
+    name: "Retail & Brand Promotions",
     icon: "GiFarmTractor",
     description:
-      "Modern dairy farming solutions and consultancy services to optimize milk production and farm management.",
+      "Boost retail sales with SMD screens inside stores, malls, and public spaces for eye-catching product promotions.",
     features: [
-      "Farm Management",
-      "Quality Control",
-      "Equipment Supply",
-      "Technical Support",
+      "In-Store SMD Displays",
+      "Mall Advertising",
+      "Product Launch Ads",
+      "Dynamic Promotions",
     ],
     image:
-      "https://images.pexels.com/photos/422218/pexels-photo-422218.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://plus.unsplash.com/premium_photo-1747710899354-e17a0fd00d49?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGJyYW5kJTIwcHJvbW90aW9uJTIwc2NyZWVuc3xlbnwwfHwwfHx8MA%3D%3D",
   },
   {
-    id: "transportation",
-    name: "Transportation",
+    id: "smd-transport",
+    name: "Transit SMD Advertising",
     icon: "MdLocalShipping",
     description:
-      "Reliable transportation and logistics services for efficient movement of goods and materials across the region.",
+      "Target daily commuters with high-impact SMD ads on highways, bus stands, airports, and transit hubs.",
     features: [
-      "Fleet Management",
-      "Route Optimization",
-      "Cargo Services",
-      "Supply Chain",
+      "Highway LED Billboards",
+      "Bus Stand Advertising",
+      "Airport Digital Boards",
+      "Real-Time Campaign Updates",
     ],
     image:
-      "https://images.pexels.com/photos/1427107/pexels-photo-1427107.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://plus.unsplash.com/premium_photo-1750311650758-9dce26d169e9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjV8fGJyYW5kJTIwcHJvbW90aW9uJTIwc2NyZWVuc3xlbnwwfHwwfHx8MA%3D%3D",
   },
 ];
 
@@ -162,7 +162,7 @@ export const TESTIMONIALS = [
     company: "Tech Solutions Ltd",
     role: "CEO",
     content:
-      "SkywardVision transformed our brand visibility with their innovative outdoor advertising campaigns. Highly recommended!",
+      "SkywardVision installed a massive outdoor SMD billboard on the highway for us, and the impact was incredible. Our brand visibility skyrocketed, and we saw a huge increase in client inquiries.",
     avatar:
       "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=100",
     rating: 5,
@@ -170,10 +170,10 @@ export const TESTIMONIALS = [
   {
     id: 2,
     name: "Fatima Ali",
-    company: "Green Valley Farms",
+    company: "Green Valley Restaurant",
     role: "Owner",
     content:
-      "Their dairy farming consultancy helped us increase our milk production by 40%. Exceptional service and expertise.",
+      "Their indoor SMD menu displays completely transformed our customer experience. Guests now engage more with promotions, and our sales went up noticeably within weeks.",
     avatar:
       "https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=100",
     rating: 5,
@@ -184,9 +184,42 @@ export const TESTIMONIALS = [
     company: "Urban Properties",
     role: "Director",
     content:
-      "Outstanding real estate marketing services. They helped us sell our properties 50% faster than our previous agency.",
+      "SkywardVision’s high-resolution SMD screens helped us launch our luxury real estate projects with style. The campaigns drew buyers instantly and boosted our sales rate by over 40%.",
     avatar:
       "https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=100",
+    rating: 5,
+  },
+  {
+    id: 4,
+    name: "Sana Riaz",
+    company: "Modern Enterprises",
+    role: "Marketing Head",
+    content:
+      "We used SkywardVision’s corporate LED video wall solutions for our events, and the result was outstanding. The visuals were crisp, engaging, and left a lasting impression on our clients.",
+    avatar:
+      "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=100",
+    rating: 5,
+  },
+  {
+    id: 5,
+    name: "Bilal Ahmed",
+    company: "Swift Logistics",
+    role: "Operations Manager",
+    content:
+      "Their transit advertising screens gave our campaigns a new edge. Placing digital ads on buses and terminals expanded our outreach and cut costs compared to traditional media.",
+    avatar:
+      "https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=100",
+    rating: 5,
+  },
+  {
+    id: 6,
+    name: "Zara Malik",
+    company: "Innovative Startups",
+    role: "Founder",
+    content:
+      "SkywardVision customized SMD screens for our retail store, and the difference was immediate. Foot traffic increased, and customers now spend more time engaging with our brand displays.",
+    avatar:
+      "https://images.pexels.com/photos/1130626/pexels-photo-1130626.jpeg?auto=compress&cs=tinysrgb&w=100",
     rating: 5,
   },
 ];
@@ -203,12 +236,10 @@ export const CONTACT_SUBJECTS = [
 
 // Portfolio categories
 export const PORTFOLIO_CATEGORIES = [
-  { id: "all", name: "All Projects" },
+  { id: "all", name: "All Campaigns" },
   { id: "outdoor", name: "Outdoor Advertising" },
+  { id: "indoor", name: "Indoor & Mall Advertising" },
   { id: "digital", name: "Digital Marketing" },
-  { id: "real-estate", name: "Real Estate" },
-  { id: "dairy", name: "Dairy Farming" },
-  { id: "transportation", name: "Transportation" },
 ];
 
 // SEO meta tags templates

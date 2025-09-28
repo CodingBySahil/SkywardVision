@@ -19,94 +19,101 @@ const PortfolioGallery = () => {
   const portfolioItems = [
     {
       id: 1,
-      title: "Digital Billboard Campaign",
+      title: "Highway Digital Billboard",
       client: "Tech Solutions Ltd",
-      category: "Outdoor Advertising",
+      category: "Outdoor SMD Advertising",
       year: "2024",
       image:
-        "https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800",
-      tags: ["Billboard", "Brand Awareness", "Digital"],
+        "https://images.unsplash.com/photo-1673534180223-3750145fc45a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8aGlnaHdheSUyMGRpZ2l0YWwlMjBiaWxsYm9hcmR8ZW58MHx8MHx8fDA%3D",
+      tags: ["SMD Screen", "Billboard", "Brand Awareness"],
       description:
-        "Large-scale digital billboard campaign that increased brand visibility by 250% in major city locations.",
+        "Installed a massive outdoor SMD digital billboard on a major highway, boosting client brand visibility by 250%.",
     },
     {
       id: 2,
-      title: "Social Media Marketing",
+      title: "Restaurant Indoor SMD Display",
       client: "Green Valley Restaurant",
-      category: "Digital Marketing",
+      category: "Indoor SMD Screens",
       year: "2024",
       image:
-        "https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=800",
-      tags: ["Social Media", "Content Creation", "Engagement"],
+        "https://images.unsplash.com/photo-1596649300028-340ad0ec6146?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fEluZG9vciUyMFNNRCUyMERpc3BsYXl8ZW58MHx8MHx8fDA%3D",
+      tags: ["Indoor SMD", "Menu Board", "Customer Engagement"],
       description:
-        "Comprehensive social media strategy that boosted online engagement by 400% and increased foot traffic.",
+        "Deployed indoor SMD menu boards and promotional screens that increased customer engagement by 400%.",
     },
     {
       id: 3,
-      title: "Luxury Property Marketing",
+      title: "Real Estate SMD Promotion",
       client: "Urban Properties",
-      category: "Real Estate",
+      category: "Property Advertising SMD",
       year: "2024",
       image:
-        "https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg?auto=compress&cs=tinysrgb&w=800",
-      tags: ["Property Marketing", "Luxury", "Sales"],
+        "https://images.unsplash.com/photo-1616418625172-c607e16733ca?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YWR2ZXJ0aXNpbmclMjBzY3JlZW58ZW58MHx8MHx8fDA%3D",
+      tags: ["SMD Display", "Property Marketing", "Luxury"],
       description:
-        "Premium property marketing campaign that achieved 90% sales rate within 3 months of launch.",
+        "Designed high-resolution outdoor SMD campaigns for luxury property launches, achieving a 90% sales rate in 3 months.",
     },
     {
       id: 4,
-      title: "Farm Management System",
-      client: "Modern Dairy Farms",
-      category: "Dairy Farming",
+      title: "Corporate LED Video Wall",
+      client: "Modern Enterprises",
+      category: "Corporate SMD Solutions",
       year: "2023",
       image:
-        "https://images.pexels.com/photos/422218/pexels-photo-422218.jpeg?auto=compress&cs=tinysrgb&w=800",
-      tags: ["Farm Management", "Technology", "Efficiency"],
+        "https://images.unsplash.com/photo-1594808985790-98a065b97476?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGFkdmVydGlzaW5nJTIwc2NyZWVufGVufDB8fDB8fHww",
+      tags: ["SMD Video Wall", "Events", "Technology"],
       description:
-        "Implemented modern farm management systems that increased milk production efficiency by 35%.",
+        "Set up a full indoor SMD video wall for corporate presentations and events, enhancing visual impact and audience experience.",
     },
     {
       id: 5,
-      title: "Fleet Optimization",
+      title: "Transit Advertising Screens",
       client: "Swift Logistics",
-      category: "Transportation",
+      category: "Transportation SMD Advertising",
       year: "2023",
       image:
-        "https://images.pexels.com/photos/1427107/pexels-photo-1427107.jpeg?auto=compress&cs=tinysrgb&w=800",
-      tags: ["Fleet Management", "Logistics", "Optimization"],
+        "https://images.unsplash.com/photo-1746985106190-6c116edec9bc?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fHRyYW5zcG9ydCUyMGFkdmVydGlzaW5nfGVufDB8fDB8fHww",
+      tags: ["Transit SMD", "Digital Ads", "Public Reach"],
       description:
-        "Transportation fleet optimization that reduced operational costs by 30% and improved delivery times.",
+        "Installed SMD screens on buses and terminals to run digital ads, reducing ad costs and expanding audience outreach.",
     },
     {
       id: 6,
-      title: "Brand Identity Design",
+      title: "Retail Branding SMD Display",
       client: "Innovative Startups",
-      category: "Digital Marketing",
+      category: "Retail SMD Solutions",
       year: "2023",
       image:
-        "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=800",
-      tags: ["Branding", "Design", "Identity"],
+        "https://plus.unsplash.com/premium_photo-1747810783159-3f8b3b5609dc?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDl8fEJyYW5kaW5nJTIwU01EJTIwRGlzcGxheXxlbnwwfHwwfHx8MA%3D%3D",
+      tags: ["Retail SMD", "Branding", "Digital Display"],
       description:
-        "Complete brand identity overhaul for multiple startups, establishing strong market presence.",
+        "Created customized retail SMD screens for startup brands, boosting store visibility and customer engagement.",
     },
   ];
 
   return (
-    <section className="py-16 lg:py-24 bg-white">
-      <div className="container mx-auto px-4">
+    <section className="relative py-16 lg:py-24 bg-gradient-to-b from-blue-950 via-blue-900 to-black overflow-hidden">
+      {/* Decorative Glows */}
+      <div className="absolute top-10 left-10 w-40 h-40 bg-blue-500/20 rounded-full blur-3xl animate-pulse"></div>
+      <div className="absolute bottom-20 right-20 w-64 h-64 bg-sky-400/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
+
+      <div className="relative container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <Badge variant="outline" className="mb-4">
+          <Badge
+            variant="outline"
+            className="mb-4 border-blue-400 text-blue-300 bg-white/10 backdrop-blur-sm"
+          >
             Our Portfolio
           </Badge>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-blackish mb-6">
-            Success Stories That
-            <span className="text-primary block">Speak for Themselves</span>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
+            Success Stories That{" "}
+            <span className="text-sky-400 block">Shine Bright on SMD</span>
           </h2>
-          <p className="text-lg text-gray-600 leading-relaxed">
-            Explore our diverse portfolio of successful projects across multiple
-            industries. Each project represents our commitment to excellence and
-            results.
+          <p className="text-lg text-blue-100 leading-relaxed">
+            Explore our portfolio of cutting-edge SMD advertising projects —
+            from outdoor billboards to indoor video walls, each designed for
+            maximum impact.
           </p>
         </div>
 
@@ -115,7 +122,7 @@ const PortfolioGallery = () => {
           {portfolioItems.map((item, index) => (
             <Card
               key={item.id}
-              className="group hover:shadow-xl transition-all duration-300 border-0 shadow-md overflow-hidden bg-white hover:-translate-y-2"
+              className="group relative border-0 bg-gradient-to-b from-white to-blue-50/90 backdrop-blur-sm shadow-md hover:shadow-2xl rounded-2xl overflow-hidden transition-all duration-500 hover:-translate-y-2"
             >
               <div className="relative overflow-hidden">
                 <img
@@ -124,13 +131,13 @@ const PortfolioGallery = () => {
                   className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
                   loading={index < 3 ? "eager" : "lazy"}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <div className="absolute bottom-4 left-4 right-4">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                  <div className="w-full p-4">
                     <Dialog>
                       <DialogTrigger asChild>
                         <Button
                           size="sm"
-                          className="w-full bg-white/90 text-blackish hover:bg-white"
+                          className="w-full bg-gradient-to-r from-sky-400 to-blue-600 text-white hover:opacity-90 transition"
                           onClick={() => setSelectedProject(item)}
                         >
                           <Eye className="w-4 h-4 mr-2" />
@@ -139,10 +146,10 @@ const PortfolioGallery = () => {
                       </DialogTrigger>
                       <DialogContent className="max-w-2xl">
                         <DialogHeader>
-                          <DialogTitle className="text-2xl">
+                          <DialogTitle className="text-2xl font-bold">
                             {item.title}
                           </DialogTitle>
-                          <DialogDescription className="text-base">
+                          <DialogDescription className="text-base text-gray-600">
                             {item.client} • {item.year}
                           </DialogDescription>
                         </DialogHeader>
@@ -157,16 +164,19 @@ const PortfolioGallery = () => {
                               <Badge
                                 key={idx}
                                 variant="secondary"
-                                className="text-xs"
+                                className="text-xs bg-sky-100 text-sky-700 border border-sky-200"
                               >
                                 {tag}
                               </Badge>
                             ))}
                           </div>
-                          <p className="text-gray-600 leading-relaxed">
+                          <p className="text-gray-700 leading-relaxed">
                             {item.description}
                           </p>
-                          <Button asChild className="w-full">
+                          <Button
+                            asChild
+                            className="w-full bg-gradient-to-r from-sky-400 to-blue-600 text-white hover:opacity-90"
+                          >
                             <Link to="/contact">
                               Start Similar Project
                               <ExternalLink className="w-4 h-4 ml-2" />
@@ -177,16 +187,13 @@ const PortfolioGallery = () => {
                     </Dialog>
                   </div>
                 </div>
-                <Badge
-                  className="absolute top-4 left-4 bg-white/90 text-blackish"
-                  variant="secondary"
-                >
+                <Badge className="absolute top-4 left-4 bg-white/90 text-blue-900 shadow">
                   {item.category}
                 </Badge>
               </div>
 
               <CardContent className="p-6">
-                <h3 className="font-bold text-lg text-blackish mb-2 group-hover:text-primary transition-colors">
+                <h3 className="font-bold text-lg text-blue-900 mb-2 group-hover:text-sky-600 transition-colors">
                   {item.title}
                 </h3>
                 <p className="text-gray-600 text-sm mb-3">
@@ -197,13 +204,13 @@ const PortfolioGallery = () => {
                     <Badge
                       key={idx}
                       variant="outline"
-                      className="text-xs border-primary/20 text-primary"
+                      className="text-xs border-sky-300 text-sky-600"
                     >
                       {tag}
                     </Badge>
                   ))}
                   {item.tags.length > 2 && (
-                    <Badge variant="outline" className="text-xs">
+                    <Badge variant="outline" className="text-xs text-gray-500">
                       +{item.tags.length - 2}
                     </Badge>
                   )}
@@ -215,13 +222,13 @@ const PortfolioGallery = () => {
 
         {/* CTA Section */}
         <div className="text-center">
-          <p className="text-gray-600 mb-6">
+          <p className="text-blue-100 mb-6">
             Want to see more of our work? Explore our complete portfolio.
           </p>
           <Button
             asChild
             size="lg"
-            className="bg-gradient-to-r from-sky-400 to-blue-600"
+            className="bg-gradient-to-r from-sky-400 to-blue-600 text-white hover:opacity-90"
           >
             <Link to="/portfolio">
               View Complete Portfolio
