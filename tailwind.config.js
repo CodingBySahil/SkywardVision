@@ -6,29 +6,45 @@ export default defineConfig({
   theme: {
     extend: {
       colors: {
-        // Main brand colors
         brandcolor: {
           DEFAULT: "#0096c8",
-          foreground: "#ffffff", // text color when bg-primary
+          foreground: "#ffffff",
         },
         primary: {
           DEFAULT: "#0ea5e9",
-          foreground: "#ffffff", // text color when bg-primary
+          foreground: "#ffffff",
         },
         secondary: {
           DEFAULT: "#F5F7FF",
-          foreground: "#101727", // dark text on light bg
+          foreground: "#101727",
         },
         destructive: {
-          DEFAULT: "#ef4444", // Tailwind red-500
+          DEFAULT: "#ef4444",
           foreground: "#ffffff",
         },
         blackish: "#101727",
-        foreground: "#101727", // fallback text color
-        background: "#ffffff", // fallback background
-        ring: "#0ea5e9", // for focus rings
+        foreground: "#101727",
+        background: "#ffffff",
+        ring: "#0ea5e9",
+      },
+      container: {
+        center: true,
+        padding: {
+          DEFAULT: "1rem",
+          sm: "1rem",
+          lg: "2rem",
+          xl: "3rem",
+        },
+        screens: {
+          sm: "100%",    // full width on small
+          md: "640px",   // controlled from here
+          lg: "1024px",
+          xl: "1280px",
+          "2xl": "1440px",
+        },
       },
     },
   },
   plugins: [animate],
 });
+
