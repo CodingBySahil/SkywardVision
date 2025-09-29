@@ -16,25 +16,29 @@ const App = () => {
   return (
     <HelmetProvider>
       <Router>
-        <div className="min-h-screen bg-white ">
+        <div className="min-h-screen flex flex-col bg-white scroll-smooth">
           <Routes>
             {/* All other routes with header/footer */}
             <Route
               path="/*"
               element={
                 <>
+                  <main className="flex-1 container max-w-screen-2xl mx-auto w-full">
                   <Header />
-                  <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/about" element={<About />} />
-                    <Route path="/services" element={<Services />} />
-                    <Route path="/portfolio" element={<Portfolio />} />
-                    <Route path="/contact" element={<Contact />} />
-                    {/* SMD Screen route without header/footer */}
-                    <Route path="/smd-screen" element={<SmdScreen />} />
-                  </Routes>
+                  {/* <main className="flex-1 container max-w-screen-2xl mx-auto w-full"> */}
+                    <Routes>
+                      <Route path="/" element={<Home />} />
+                      <Route path="/about" element={<About />} />
+                      <Route path="/services" element={<Services />} />
+                      <Route path="/portfolio" element={<Portfolio />} />
+                      <Route path="/contact" element={<Contact />} />
+                      {/* SMD Screen route without header/footer */}
+                      <Route path="/smd-screen" element={<SmdScreen />} />
+                    </Routes>
+                  {/* </main> */}
                   <Footer />
                   <WhatsAppButton />
+                  </main>
                 </>
               }
             />
