@@ -11,11 +11,15 @@ import Services from "@/pages/Services";
 import Portfolio from "@/pages/Portfolio";
 import Contact from "@/pages/Contact";
 import SmdScreen from "@/pages/SmdScreen";
+import ScrollToTop from "./components/common/ScrollToTop";
 
 const App = () => {
   return (
     <HelmetProvider>
       <Router>
+
+        {/* scrolling to the top of page */}
+        <ScrollToTop /> 
         <div className="min-h-screen flex flex-col bg-white scroll-smooth">
           <Routes>
             {/* All other routes with header/footer */}
