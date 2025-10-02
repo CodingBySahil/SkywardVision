@@ -55,7 +55,7 @@ const Header = () => {
       {/* Main Navbar */}
       <header
         className={cn(
-          "sticky top-0 z-50 w-full transition-all duration-300 border-b",
+          "sticky -top-1 z-50 w-full transition-all duration-300 border-b",
           isScrolled
             ? "bg-[#101727]/95 backdrop-blur-md shadow-lg border-gray-700"
             : "bg-white/90 border-gray-200"

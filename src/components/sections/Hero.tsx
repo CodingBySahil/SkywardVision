@@ -7,7 +7,7 @@ import HeroImg from "/assets/mockups/1.jpg";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center bg-gradient-to-r from-sky-400 to-blue-600 overflow-hidden">
+    <section className="relative  flex items-center bg-gradient-to-r from-sky-400 to-blue-600 overflow-hidden pt-24">
       {/* Background Layer */}
       <div className="absolute inset-0">
         <img
@@ -20,17 +20,17 @@ const Hero = () => {
       </div>
 
       {/* Container */}
-      <div className="relative z-10 container mx-auto px-6 lg:px-12 py-16 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div className="relative z-10 container mx-auto px-6 sm:px-8 lg:px-16 py-12 md:py-20 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         {/* Left Content */}
         <div className="text-white space-y-6 animate-fade-in-up text-center lg:text-left">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight">
             Elevating Brands to{" "}
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500">
               New Heights
             </span>
           </h1>
 
-          <p className="text-lg md:text-xl text-blue-100 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl text-blue-100 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
             SkywardVision is your trusted partner for comprehensive
             advertisement and marketing solutions. From outdoor advertising to
             digital marketing, we help businesses soar to success.
@@ -67,7 +67,7 @@ const Hero = () => {
             <p className="text-blue-100 text-sm mb-6">
               Trusted by 500+ businesses across Pakistan
             </p>
-            <div className="flex flex-wrap justify-center lg:justify-start gap-8 opacity-80">
+            <div className="flex  justify-center lg:justify-start gap-8 opacity-80">
               <div className="text-center">
                 <div className="text-2xl font-bold">500+</div>
                 <div className="text-sm text-blue-200">Happy Clients</div>
@@ -91,12 +91,12 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Right Image (Hidden on small screens) */}
-        <div className="relative flex justify-center lg:justify-end hidden md:flex">
+        {/* Right Image (Hidden on small/medium screens, only visible on large) */}
+        <div className="relative justify-center lg:justify-end hidden lg:flex">
           <img
             src={Logo}
             alt="Advertising Illustration"
-            className="w-full max-w-xs md:max-w-sm lg:max-w-lg drop-shadow-2xl animate-fade-in"
+            className="w-full max-w-xs md:max-w-sm lg:max-w-md xl:max-w-lg drop-shadow-2xl animate-fade-in"
           />
         </div>
       </div>
