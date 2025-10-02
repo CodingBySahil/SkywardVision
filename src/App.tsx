@@ -20,14 +20,14 @@ const App = () => {
 
         {/* scrolling to the top of page */}
         <ScrollToTop /> 
-        <div className="min-h-screen flex flex-col bg-white scroll-smooth">
+        <div className="min-h-screen flex flex-col bg-gradient-to-br from-blue via-blue-900 to-blue-900 scroll-smooth">
           <Routes>
             {/* All other routes with header/footer */}
             <Route
               path="/*"
               element={
                 <>
-                  <main className="flex-1 container max-w-screen-2xl mx-auto w-full">
+                  <main className="flex-1 container min-w-full mx-auto w-full">
                   <Header />
                   {/* <main className="flex-1 container max-w-screen-2xl mx-auto w-full"> */}
                     <Routes>
