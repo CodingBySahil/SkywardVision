@@ -1,9 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Play } from "lucide-react";
-import Logo from "/assets/Logo/22.png";
-import HeroImg from "/assets/mockups/1.jpg";
 
 const Hero = () => {
   return (
@@ -11,7 +9,7 @@ const Hero = () => {
       {/* Background Layer */}
       <div className="absolute inset-0">
         <img
-          src={HeroImg}
+          src={"/assets/mockups/1.jpg"}
           alt="Hero Background"
           className="w-full h-full object-cover opacity-40"
           loading="lazy"
@@ -43,7 +41,7 @@ const Hero = () => {
               size="lg"
               className="bg-white text-blue-600 hover:bg-blue-50 hover:text-blue-700 font-semibold px-8 py-3 rounded-full transition-all duration-300 hover:shadow-lg transform hover:scale-105"
             >
-              <Link to="/contact" className="flex items-center space-x-2">
+              <Link href="/contact-us" className="flex items-center space-x-2">
                 <span>Get Free Consultation</span>
                 <ArrowRight className="w-5 h-5" />
               </Link>
@@ -55,7 +53,7 @@ const Hero = () => {
               size="lg"
               className="border-white/30 text-white hover:bg-white/10 backdrop-blur-sm font-semibold px-8 py-3 rounded-full transition-all duration-300"
             >
-              <Link to="/portfolio" className="flex items-center space-x-2">
+              <Link href="/portfolio" className="flex items-center space-x-2">
                 <Play className="w-5 h-5" />
                 <span>View Our Work</span>
               </Link>
@@ -94,7 +92,7 @@ const Hero = () => {
         {/* Right Image (Hidden on small/medium screens, only visible on large) */}
         <div className="relative justify-center lg:justify-end hidden lg:flex">
           <img
-            src={Logo}
+            src={"/assets/Logo/22.png"}
             alt="Advertising Illustration"
             className="w-full max-w-xs md:max-w-sm lg:max-w-md xl:max-w-lg drop-shadow-2xl animate-fade-in"
           />

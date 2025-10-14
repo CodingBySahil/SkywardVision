@@ -1,5 +1,5 @@
+"use client";
 import React, { useState, useEffect } from "react";
-import SEOHead from "@/components/SEOHead";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import {
@@ -11,9 +11,8 @@ import {
   Volume2,
   VolumeX,
 } from "lucide-react";
-import { SEO_META } from "@/utils/constants";
 
-const SmdScreen = () => {
+const SmdScreenSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isPlaying, setIsPlaying] = useState(true);
   const [isFullscreen, setIsFullscreen] = useState(false);
@@ -161,13 +160,6 @@ const SmdScreen = () => {
 
   return (
     <>
-      <SEOHead
-        title={SEO_META.smdScreen.title}
-        description={SEO_META.smdScreen.description}
-        keywords={SEO_META.smdScreen.keywords}
-        url="/smd-screen"
-      />
-
       <main
         id="main-content"
         className={`${isFullscreen ? "h-screen" : ""} overflow-hidden`}
@@ -357,4 +349,4 @@ const SmdScreen = () => {
   );
 };
 
-export default SmdScreen;
+export default SmdScreenSection;

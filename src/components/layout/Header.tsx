@@ -1,16 +1,18 @@
+"use client";
 import React, { useState, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { HiMenu } from "react-icons/hi";
 import { HiPhone, HiMail } from "react-icons/hi";
 import { NAVIGATION, CONTACT_INFO } from "@/utils/constants";
 import { cn } from "@/lib/utils";
 import Logo from "../base/Logo";
+import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const location = useLocation();
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,8 +23,8 @@ const Header = () => {
   }, []);
 
   const isActiveLink = (href) => {
-    if (href === "/") return location.pathname === "/";
-    return location.pathname.startsWith(href);
+    if (href === "/") return pathname === "/";
+    return pathname.startsWith(href);
   };
 
   return (
@@ -70,7 +72,7 @@ const Header = () => {
               {NAVIGATION.main.map((item) => (
                 <Link
                   key={item.key}
-                  to={item.href}
+                  href={item.href}
                   className={cn(
                     "text-sm font-medium transition-colors relative after:block after:h-[2px] after:w-0 after:bg-gradient-to-r after:from-sky-400 after:to-blue-600 after:transition-all after:duration-300 hover:after:w-full",
                     isActiveLink(item.href)
@@ -87,7 +89,7 @@ const Header = () => {
                 asChild
                 className="bg-gradient-to-r from-sky-400 to-blue-600 hover:from-sky-500 hover:to-blue-700 text-white font-semibold shadow-md"
               >
-                <Link to="/contact">Get Quote</Link>
+                <Link href="/contact-us">Get Quote</Link>
               </Button>
             </nav>
 
@@ -97,7 +99,9 @@ const Header = () => {
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                 className={cn(
                   "p-2 rounded-md transition-colors",
-                  isScrolled ? "text-gray-100 hover:text-sky-400" : "text-gray-700 hover:text-blue-600"
+                  isScrolled
+                    ? "text-gray-100 hover:text-sky-400"
+                    : "text-gray-700 hover:text-blue-600"
                 )}
               >
                 <HiMenu className="h-6 w-6" />
@@ -111,7 +115,7 @@ const Header = () => {
               {NAVIGATION.main.map((item) => (
                 <Link
                   key={item.key}
-                  to={item.href}
+                  href={item.href}
                   onClick={() => setIsMobileMenuOpen(false)}
                   className={cn(
                     "block text-base font-medium px-4 py-2 rounded-md transition-colors",
@@ -129,7 +133,7 @@ const Header = () => {
                   className="w-full bg-gradient-to-r from-sky-400 to-blue-600 hover:from-sky-500 hover:to-blue-700 text-white font-semibold shadow-md"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
-                  <Link to="/contact">Get Quote</Link>
+                  <Link href="/contact-us">Get Quote</Link>
                 </Button>
               </div>
             </div>
@@ -141,4 +145,3 @@ const Header = () => {
 };
 
 export default Header;
-

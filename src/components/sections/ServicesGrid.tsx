@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import {
   Card,
   CardContent,
@@ -119,7 +119,7 @@ const ServicesGrid = () => {
                     className="w-full justify-between bg-blue-50 text-blue-900 hover:bg-gradient-to-r hover:from-sky-400 hover:to-blue-600 hover:text-white transition-all duration-300"
                   >
                     <Link
-                      to={`/services#${service.id}`}
+                      href={`/services#${service.id}`}
                       className="flex w-full justify-between items-center"
                     >
                       <span>Learn More</span>
@@ -148,7 +148,7 @@ const ServicesGrid = () => {
                 size="lg"
                 className="bg-white text-blue-600 hover:bg-blue-50 font-semibold shadow-md"
               >
-                <Link to="/contact">Get Free Consultation</Link>
+                <Link href="/contact-us">Get Free Consultation</Link>
               </Button>
               <Button
                 asChild
@@ -156,7 +156,7 @@ const ServicesGrid = () => {
                 size="lg"
                 className="border-white/30 text-white hover:bg-white/10"
               >
-                <Link to="/services">Explore All Services</Link>
+                <Link href="/services">Explore All Services</Link>
               </Button>
             </div>
           </div>

@@ -1,10 +1,8 @@
+"use client";
 import React from "react";
-import { Link } from "react-router-dom";
-import SEOHead from "@/components/SEOHead";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import officeImg from "/assets/mockups/2.jpg";
 import {
   Target,
   Eye,
@@ -14,9 +12,9 @@ import {
   TrendingUp,
   CircleCheck as CheckCircle,
 } from "lucide-react";
-import { SEO_META } from "@/utils/constants";
+import Link from "next/link";
 
-const About = () => {
+const AboutSection = () => {
   const teamMembers = [
     {
       name: "Ahmed Hassan",
@@ -80,13 +78,6 @@ const About = () => {
 
   return (
     <>
-      <SEOHead
-        title={SEO_META.about.title}
-        description={SEO_META.about.description}
-        keywords={SEO_META.about.keywords}
-        url="/about"
-      />
-
       <main id="main-content">
         {/* Hero Section */}
         <section className="relative py-24 bg-gradient-to-r from-sky-400 to-blue-600 overflow-hidden">
@@ -159,12 +150,12 @@ const About = () => {
                       className="ml-2 w-5 h-5"
                       fill="none"
                       stroke="currentColor"
-                      stroke-width="2"
+                      strokeWidth="2"
                       viewBox="0 0 24 24"
                     >
                       <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                         d="M9 5l7 7-7 7"
                       />
                     </svg>
@@ -176,7 +167,7 @@ const About = () => {
               <div className="relative flex justify-center lg:justify-end animate-fade-in">
                 <div className="relative w-full max-w-md lg:max-w-lg rounded-3xl overflow-hidden shadow-2xl">
                   <img
-                    src={officeImg}
+                    src={"/assets/mockups/2.jpg"}
                     alt="About SkywardVision"
                     className="w-full h-full object-cover rounded-3xl"
                   />
@@ -232,7 +223,7 @@ const About = () => {
                       size="lg"
                       className="bg-gradient-to-r from-sky-400 to-blue-600 hover:from-sky-500 hover:to-blue-700 shadow-lg"
                     >
-                      <Link to="/contact">Partner With Us</Link>
+                      <Link href="/contact-us">Partner With Us</Link>
                     </Button>
                   </div>
                 </div>
@@ -487,7 +478,7 @@ const About = () => {
                   size="lg"
                   className="bg-white text-blue-600 hover:bg-blue-50"
                 >
-                  <Link to="/contact">Start Your Project</Link>
+                  <Link href="/contact-us">Start Your Project</Link>
                 </Button>
                 <Button
                   asChild
@@ -495,7 +486,7 @@ const About = () => {
                   size="lg"
                   className="border-white/30 text-white hover:bg-white/10"
                 >
-                  <Link to="/portfolio">View Our Work</Link>
+                  <Link href="/portfolio">View Our Work</Link>
                 </Button>
               </div>
             </div>
@@ -506,4 +497,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AboutSection;

@@ -89,11 +89,11 @@ export const generateOrganizationSchema = () => {
 };
 
 // Generate breadcrumb schema
-export const generateBreadcrumbSchema = (breadcrumbs) => {
+export const generateBreadcrumbSchema = (breadcrumbs: any) => {
   return {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
-    itemListElement: breadcrumbs.map((crumb, index) => ({
+    itemListElement: breadcrumbs.map((crumb, index: number) => ({
       "@type": "ListItem",
       position: index + 1,
       name: crumb.name,
@@ -103,7 +103,7 @@ export const generateBreadcrumbSchema = (breadcrumbs) => {
 };
 
 // Generate service schema
-export const generateServiceSchema = (service) => {
+export const generateServiceSchema = (service: any) => {
   return {
     "@context": "https://schema.org",
     "@type": "Service",
@@ -120,7 +120,7 @@ export const generateServiceSchema = (service) => {
       "@type": "OfferCatalog",
       name: service.name,
       itemListElement:
-        service.features?.map((feature) => ({
+        service.features?.map((feature: any) => ({
           "@type": "Offer",
           itemOffered: {
             "@type": "Service",

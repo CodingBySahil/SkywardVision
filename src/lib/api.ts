@@ -1,10 +1,10 @@
-import axios from 'axios';
+import axios from "axios";
 
 // Create axios instance with default configuration
 export const api = axios.create({
-  baseURL: import.meta.env.VITE_API_BASE_URL || 'https://api.example.com',
+  baseURL: process.env.VITE_API_BASE_URL || "https://api.example.com",
   headers: {
-    'Content-Type': 'application/json',
+    "Content-Type": "application/json",
   },
   timeout: 10000, // 10 seconds timeout
 });
@@ -13,7 +13,7 @@ export const api = axios.create({
 api.interceptors.request.use(
   (config) => {
     // Add auth token if available
-    const token = localStorage.getItem('authToken');
+    const token = localStorage.getItem("authToken");
     if (token) {
       config.headers.Authorization = `Bearer ${token}`;
     }
@@ -30,7 +30,7 @@ api.interceptors.response.use(
     return response;
   },
   (error) => {
-    console.error('API Error:', error);
+    console.error("API Error:", error);
     return Promise.reject(error);
   }
 );
@@ -38,7 +38,7 @@ api.interceptors.response.use(
 // API functions
 export const sendContactForm = async (formData) => {
   try {
-    const response = await api.post('/contact', formData);
+    const response = await api.post("/contact-us", formData);
     return response.data;
   } catch (error) {
     throw error;
@@ -47,7 +47,7 @@ export const sendContactForm = async (formData) => {
 
 export const subscribeNewsletter = async (email) => {
   try {
-    const response = await api.post('/newsletter', { email });
+    const response = await api.post("/newsletter", { email });
     return response.data;
   } catch (error) {
     throw error;
@@ -56,7 +56,7 @@ export const subscribeNewsletter = async (email) => {
 
 export const getPortfolioItems = async (filters = {}) => {
   try {
-    const response = await api.get('/portfolio', { params: filters });
+    const response = await api.get("/portfolio", { params: filters });
     return response.data;
   } catch (error) {
     throw error;

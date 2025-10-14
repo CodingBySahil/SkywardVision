@@ -1,6 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import SEOHead from "@/components/SEOHead";
+import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -22,8 +21,8 @@ import {
 import { SERVICES, SEO_META } from "@/utils/constants";
 import { generateServiceSchema } from "@/utils/seo";
 
-const Services = () => {
-  const iconMap = {
+const ServicesSection = () => {
+  const iconMap: any = {
     MdOutdoorGrill: MdOutdoorGrill,
     MdDevices: MdDevices,
     MdHome: MdHome,
@@ -31,7 +30,7 @@ const Services = () => {
     MdLocalShipping: MdLocalShipping,
   };
 
-  const serviceDetails = {
+  const serviceDetails:any = {
     outdoor: {
       benefits: [
         "High visibility locations",
@@ -116,14 +115,6 @@ const Services = () => {
 
   return (
     <>
-      <SEOHead
-        title={SEO_META.services.title}
-        description={SEO_META.services.description}
-        keywords={SEO_META.services.keywords}
-        url="/services"
-        structuredData={servicesSchema}
-      />
-
       <main id="main-content" className="">
         {/* Hero Section */}
         <section className="relative py-20 lg:py-32 bg-gradient-to-r from-sky-400 to-blue-600 overflow-hidden">
@@ -174,7 +165,7 @@ const Services = () => {
                   size="lg"
                   className="bg-white text-blue-600 hover:bg-blue-50 hover:text-blue-700 font-semibold px-8 py-3 rounded-full transition-all duration-300 hover:shadow-lg transform hover:scale-105"
                 >
-                  <Link to="/contact">Get Free Consultation</Link>
+                  <Link href="/contact-us">Get Free Consultation</Link>
                 </Button>
               </div>
             </div>
@@ -323,7 +314,8 @@ const Services = () => {
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-6xl mx-auto space-y-24">
               {SERVICES.map((service, index) => {
-                const IconComponent = iconMap[service.icon] || MdOutdoorGrill;
+                const IconComponent =
+                  iconMap[service.icon] || MdOutdoorGrill;
                 const details = serviceDetails[service.id] || {};
                 const isEven = index % 2 === 0;
 
@@ -423,7 +415,7 @@ const Services = () => {
                             asChild
                             className="bg-gradient-to-r from-sky-400 to-blue-600 shadow-lg shadow-sky-500/30 hover:scale-105 transition-transform duration-300"
                           >
-                            <Link to="/contact" className="text-white">
+                            <Link href="/contact-us" className="text-white">
                               Get Quote
                             </Link>
                           </Button>
@@ -432,7 +424,10 @@ const Services = () => {
                             variant="outline"
                             className="border-sky-400 text-sky-300 hover:bg-sky-400/10"
                           >
-                            <Link to="/portfolio" className="flex items-center">
+                            <Link
+                              href="/portfolio"
+                              className="flex items-center"
+                            >
                               View Case Studies
                               <ArrowRight className="w-4 h-4 ml-2" />
                             </Link>
@@ -564,7 +559,7 @@ const Services = () => {
                   size="lg"
                   className="bg-white text-blue-600 hover:bg-blue-50"
                 >
-                  <Link to="/contact">Get Free Consultation</Link>
+                  <Link href="/contact-us">Get Free Consultation</Link>
                 </Button>
                 <Button
                   asChild
@@ -572,7 +567,7 @@ const Services = () => {
                   size="lg"
                   className="border-white/30 text-white hover:bg-white/10"
                 >
-                  <Link to="/about">Learn More About Us</Link>
+                  <Link href="/about">Learn More About Us</Link>
                 </Button>
               </div>
             </div>
@@ -583,4 +578,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default ServicesSection;

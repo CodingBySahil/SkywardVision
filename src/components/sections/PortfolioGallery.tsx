@@ -1,5 +1,6 @@
+"use client";
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -177,7 +178,7 @@ const PortfolioGallery = () => {
                             asChild
                             className="w-full bg-gradient-to-r from-sky-400 to-blue-600 text-white hover:opacity-90"
                           >
-                            <Link to="/contact">
+                            <Link href="/contact-us">
                               Start Similar Project
                               <ExternalLink className="w-4 h-4 ml-2" />
                             </Link>
@@ -230,7 +231,7 @@ const PortfolioGallery = () => {
             size="lg"
             className="bg-gradient-to-r from-sky-400 to-blue-600 text-white hover:opacity-90"
           >
-            <Link to="/portfolio">
+            <Link href="/portfolio">
               View Complete Portfolio
               <ExternalLink className="w-4 h-4 ml-2" />
             </Link>
