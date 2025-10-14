@@ -1,5 +1,6 @@
+"use client";
 import React from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import {
   FaFacebookF,
   FaTwitter,
@@ -106,7 +107,7 @@ const Footer = () => {
               {NAVIGATION.main.map((item) => (
                 <Link
                   key={item.key}
-                  to={item.href}
+                  href={item.href}
                   className="text-gray-300 hover:text-primary transition-colors text-sm"
                 >
                   {item.name}
@@ -122,7 +123,7 @@ const Footer = () => {
               {NAVIGATION.footer.services.map((service, index) => (
                 <Link
                   key={index}
-                  to={service.href}
+                  href={service.href}
                   className="text-gray-300 hover:text-primary transition-colors text-sm"
                 >
                   {service.name}
@@ -203,7 +204,7 @@ const Footer = () => {
           <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden">
             <iframe
               src={
-                import.meta.env.VITE_GOOGLE_MAP_EMBED_URL ||
+                process.env.VITE_GOOGLE_MAP_EMBED_URL ||
                 "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.8574509655897!2d67.0099646149678!3d24.860966584065833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDUxJzM5LjUiTiA2N8KwMDAnNDMuOSJF!5e0!3m2!1sen!2s!4v1625000000000!5m2!1sen!2s"
               }
               width="100%"
@@ -230,7 +231,7 @@ const Footer = () => {
               {NAVIGATION.footer.legal.map((link, index) => (
                 <Link
                   key={index}
-                  to={link.href}
+                  href={link.href}
                   className="text-sm text-gray-400 hover:text-primary transition-colors"
                 >
                   {link.name}

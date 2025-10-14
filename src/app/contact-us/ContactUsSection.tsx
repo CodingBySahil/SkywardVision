@@ -1,5 +1,4 @@
 import React from "react";
-import SEOHead from "@/components/SEOHead";
 import ContactForm from "@/components/sections/ContactForm";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -12,18 +11,11 @@ import {
   Headphones,
 } from "lucide-react";
 import { CONTACT_INFO, SEO_META } from "@/utils/constants";
-import FaqsSection from "../components/sections/Faqs";
+import FaqsSection from "@/components/sections/Faqs";
 
-const Contact = () => {
+const ContactUsSection = () => {
   return (
     <>
-      <SEOHead
-        title={SEO_META.contact.title}
-        description={SEO_META.contact.description}
-        keywords={SEO_META.contact.keywords}
-        url="/contact"
-      />
-
       <main id="main-content" className="">
         {/* Hero Section */}
 
@@ -76,7 +68,7 @@ const Contact = () => {
                 {/* CTA */}
                 <div>
                   <a
-                    href="/contact"
+                    href="/contact-us"
                     className="inline-flex items-center px-6 py-3 rounded-full bg-white text-blue-600 font-semibold shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
                   >
                     Contact Us Today
@@ -262,7 +254,7 @@ const Contact = () => {
                     <div className="aspect-w-16 aspect-h-12">
                       <iframe
                         src={
-                          import.meta.env.VITE_GOOGLE_MAP_EMBED_URL ||
+                          process.env.VITE_GOOGLE_MAP_EMBED_URL ||
                           "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.8574509655897!2d67.0099646149678!3d24.860966584065833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDUxJzM5LjUiTiA2N8KwMDAnNDMuOSJF!5e0!3m2!1sen!2s!4v1625000000000!5m2!1sen!2s"
                         }
                         width="100%"
@@ -292,4 +284,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default ContactUsSection;

@@ -1,9 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 function Logo() {
   return (
-    <Link to={"/"} className="w-[250px] h-auto">
+    <Link href={"/"} className="w-[250px] h-auto">
       <img
         src="/assets/main-logo.png"
         alt="SkywardVision Logo"

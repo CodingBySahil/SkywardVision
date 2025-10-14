@@ -4,7 +4,7 @@ export const SITE_CONFIG = {
   tagline: "Elevating Brands to New Heights",
   description:
     "SkywardVision — diversified advertisement & marketing enterprise in Pakistan. Outdoor advertising, digital marketing, real estate, dairy farming, and transportation.",
-  url: import.meta.env.VITE_SITE_URL || "https://skywardvision.example.com",
+  url: process.env.VITE_SITE_URL || "https://skywardvision.example.com",
   logo: "/logo.png",
   author: "SkywardVision Team",
 };
@@ -12,7 +12,7 @@ export const SITE_CONFIG = {
 // Contact information
 export const CONTACT_INFO = {
   phone: "+92 331 5484042",
-  whatsapp: import.meta.env.VITE_WHATSAPP_NUMBER || "923315484042",
+  whatsapp: process.env.VITE_WHATSAPP_NUMBER || "923315484042",
   email: "support@skywardvision.com.pk",
   address: {
     street: "123 Business District",
@@ -45,7 +45,7 @@ export const NAVIGATION = {
     { name: "About", href: "/about", key: "about" },
     { name: "Services", href: "/services", key: "services" },
     { name: "Portfolio", href: "/portfolio", key: "portfolio" },
-    { name: "Contact", href: "/contact", key: "contact" },
+    { name: "Contact", href: "/contact-us", key: "contact" },
     { name: "SMD Screen", href: "/smd-screen", key: "smd-screen" },
   ],
   footer: {
@@ -63,7 +63,7 @@ export const NAVIGATION = {
       { name: "News", href: "/news" },
     ],
     support: [
-      { name: "Contact Us", href: "/contact" },
+      { name: "Contact Us", href: "/contact-us" },
       { name: "FAQ", href: "/faq" },
       { name: "Support Center", href: "/support" },
     ],

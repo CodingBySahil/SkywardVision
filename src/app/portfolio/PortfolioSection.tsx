@@ -1,6 +1,5 @@
+"use client";
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import SEOHead from "@/components/SEOHead";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -13,12 +12,13 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { Eye, ExternalLink, Filter } from "lucide-react";
-import { PORTFOLIO_CATEGORIES, SEO_META } from "@/utils/constants";
-import logoImg from "/assets/mockups/3.jpg";
+import { PORTFOLIO_CATEGORIES } from "@/utils/constants";
 
-const Portfolio = () => {
+import Link from "next/link";
+
+const PortfolioSection = () => {
   const [selectedCategory, setSelectedCategory] = useState("all");
-  const [selectedProject, setSelectedProject] = useState(null);
+  const [selectedProject, setSelectedProject] = useState<any>(null);
   const portfolioItems = [
     {
       id: 1,
@@ -142,13 +142,6 @@ const Portfolio = () => {
 
   return (
     <>
-      <SEOHead
-        title={SEO_META.portfolio.title}
-        description={SEO_META.portfolio.description}
-        keywords={SEO_META.portfolio.keywords}
-        url="/portfolio"
-      />
-
       <main id="main-content" className="">
         {/* Hero Section */}
 
@@ -185,7 +178,7 @@ const Portfolio = () => {
                 {/* CTA Buttons */}
                 <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                   <a
-                    href="/contact"
+                    href="/contact-us"
                     className="inline-flex items-center px-6 py-3 rounded-full bg-white text-blue-600 font-semibold shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
                   >
                     Start Your Project
@@ -203,7 +196,7 @@ const Portfolio = () => {
               <div className="relative flex justify-center lg:justify-end animate-fade-in">
                 <div className="relative w-full max-w-md lg:max-w-lg rounded-3xl overflow-hidden shadow-2xl">
                   <img
-                    src={logoImg}
+                    src={"/assets/mockups/3.jpg"}
                     alt="SkywardVision Portfolio"
                     className="w-full h-full object-cover rounded-3xl"
                   />
@@ -417,7 +410,7 @@ const Portfolio = () => {
                                   asChild
                                   className="flex-1 bg-gradient-to-r from-sky-400 to-blue-600 text-white"
                                 >
-                                  <Link to="/contact">
+                                  <Link href="/contact-us">
                                     Start Similar Project
                                     <ExternalLink className="w-4 h-4 ml-2" />
                                   </Link>
@@ -427,7 +420,9 @@ const Portfolio = () => {
                                   variant="outline"
                                   className="flex-1 border-sky-400/40 text-sky-300 hover:bg-sky-400/20"
                                 >
-                                  <Link to="/services">View Our Services</Link>
+                                  <Link href="/services">
+                                    View Our Services
+                                  </Link>
                                 </Button>
                               </div>
                             </div>
@@ -530,7 +525,7 @@ const Portfolio = () => {
                   size="lg"
                   className="bg-white text-blue-600 hover:bg-blue-50"
                 >
-                  <Link to="/contact">Start Your Project</Link>
+                  <Link href="/contact-us">Start Your Project</Link>
                 </Button>
                 <Button
                   asChild
@@ -538,7 +533,7 @@ const Portfolio = () => {
                   size="lg"
                   className="border-white/30 text-white hover:bg-white/10"
                 >
-                  <Link to="/about">Learn About Our Process</Link>
+                  <Link href="/about">Learn About Our Process</Link>
                 </Button>
               </div>
             </div>
@@ -549,4 +544,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default PortfolioSection;
