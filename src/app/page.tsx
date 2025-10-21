@@ -8,6 +8,7 @@ import Testimonials from "@/components/sections/Testimonials";
 import { SEO_META } from "@/utils/constants";
 import { generateSEO } from "@/components/SEOHead";
 import EventsSection from "@/components/sections/EventsSection";
+import WhatWeDo from "@/components/sections/WhatWeDo";
 
 export async function generateMetadata() {
   return generateSEO({
@@ -23,7 +24,8 @@ const HomePage = () => {
     <>
       <main id="main-content">
         <Hero />
-        <ServicesGrid />
+        {/* <ServicesGrid /> */}
+        <WhatWeDo/>
         <EventsSection/>
         <PortfolioGallery />
         <Testimonials />
