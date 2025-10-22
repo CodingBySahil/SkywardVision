@@ -167,7 +167,7 @@ const AboutSection = () => {
               <div className="relative flex justify-center lg:justify-end animate-fade-in">
                 <div className="relative w-full max-w-md lg:max-w-lg rounded-3xl overflow-hidden shadow-2xl">
                   <img
-                    src={"/assets/mockups/2.jpg"}
+                    src={"/assets/mockups/5.jpg"}
                     alt="About SkywardVision"
                     className="w-full h-full object-cover rounded-3xl"
                   />

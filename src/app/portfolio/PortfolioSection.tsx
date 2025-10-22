@@ -196,7 +196,7 @@ const PortfolioSection = () => {
               <div className="relative flex justify-center lg:justify-end animate-fade-in">
                 <div className="relative w-full max-w-md lg:max-w-lg rounded-3xl overflow-hidden shadow-2xl">
                   <img
-                    src={"/assets/mockups/3.jpg"}
+                    src={"/assets/mockups/7.jpg"}
                     alt="SkywardVision Portfolio"
                     className="w-full h-full object-cover rounded-3xl"
                   />
