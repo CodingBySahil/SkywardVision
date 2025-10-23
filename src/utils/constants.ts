@@ -47,6 +47,7 @@ export const NAVIGATION = {
     { name: "Portfolio", href: "/portfolio", key: "portfolio" },
     { name: "Contact", href: "/contact-us", key: "contact" },
     { name: "SMD Screen", href: "/smd-screen", key: "smd-screen" },
+    { name: "Construction", href: "/construction", key: "construction" },
   ],
   footer: {
     services: [
@@ -286,6 +287,13 @@ export const SEO_META = {
       "Professional SMD screen and digital display solutions for outdoor advertising and marketing campaigns.",
     keywords:
       "SMD screen, digital displays, outdoor displays, LED screens, advertising screens",
+  },
+  construction: {
+    title: "Construction Display Solutions — SkywardVision Digital Signage",
+    description:
+      "High-quality digital signage and LED display solutions for construction sites, project updates, and safety communication.",
+    keywords:
+      "construction digital signage, construction LED displays, site information screens, project display boards, safety message screens",
   },
 };
 
