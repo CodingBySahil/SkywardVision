@@ -74,7 +74,7 @@ const RunningProjects: React.FC = () => {
   const router = useRouter();
 
   return (
-    <section className="relative w-full py-16 sm:py-20 lg:py-24 bg-gradient-to-b from-black via-blue-950 to-black text-white overflow-hidden">
+    <section className="relative w-full py-16 sm:py-20 lg:py-24 bg-gradient-to-b from-blackish-light via-blue-950 to-blackish-light text-white overflow-hidden">
       {/* Section Header */}
       <div className="relative text-center mb-16 px-6 z-10">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight animate-fadeSlide">
