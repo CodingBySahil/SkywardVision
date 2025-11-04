@@ -3,7 +3,7 @@ import Link from "next/link";
 
 function Logo() {
   return (
-    <Link href={"/"} className="w-[250px] h-auto">
+    <Link href={"/"} className="w-[250px] h-auto mr-8">
       <img
         src="/assets/main-logo.png"
         alt="SkywardVision Logo"

@@ -145,7 +145,7 @@ const PortfolioSection = () => {
       <main id="main-content" className="">
         {/* Hero Section */}
 
-        <section className="relative py-24 bg-gradient-to-r from-sky-400 to-blue-600 overflow-hidden">
+        <section className="relative py-24 bg-gradient-to-r to-sky-400 from-blue-600 overflow-hidden">
           {/* Floating Shapes */}
           <div className="absolute inset-0">
             <div className="absolute top-10 left-10 w-32 h-32 bg-white/10 rounded-full blur-3xl animate-pulse"></div>
@@ -163,7 +163,7 @@ const PortfolioSection = () => {
                   </h6>
                   <h2 className="text-4xl md:text-5xl font-extrabold leading-tight">
                     Success Stories That{" "}
-                    <span className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500">
+                    <span className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-300 to-teal-400">
                       Drive Results
                     </span>
                   </h2>

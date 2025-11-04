@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 import { CONTACT_INFO, SEO_META } from "@/utils/constants";
 import FaqsSection from "@/components/sections/Faqs";
+import { FaWhatsappSquare } from "react-icons/fa";
 
 const ContactUsSection = () => {
   return (
@@ -19,7 +20,7 @@ const ContactUsSection = () => {
       <main id="main-content" className="">
         {/* Hero Section */}
 
-        <section className="relative py-24 bg-gradient-to-r from-sky-400 to-blue-600 overflow-hidden">
+        <section className="relative py-24 bg-gradient-to-r to-sky-400 from-blue-600 overflow-hidden">
           {/* Floating Shapes */}
           <div className="absolute inset-0">
             <div className="absolute top-10 left-10 w-32 h-32 bg-white/10 rounded-full blur-3xl animate-pulse"></div>
@@ -37,7 +38,8 @@ const ContactUsSection = () => {
                   </h6>
                   <h2 className="text-4xl md:text-5xl font-extrabold leading-tight">
                     Let’s Build{" "}
-                    <span className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500">
+                    {/* <span className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500"> */}
+                    <span className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-300 to-teal-400">
                       Success Together
                     </span>
                   </h2>
@@ -150,7 +152,7 @@ const ContactUsSection = () => {
                 </Card>
 
                 {/* Email */}
-                <Card className="border border-white/10 bg-white/5 backdrop-blur-md text-center rounded-2xl hover:scale-[1.03] transition-transform duration-500">
+                {/* <Card className="border border-white/10 bg-white/5 backdrop-blur-md text-center rounded-2xl hover:scale-[1.03] transition-transform duration-500">
                   <CardHeader>
                     <div className="w-16 h-16 bg-gradient-to-r from-sky-400 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
                       <Mail className="w-8 h-8 text-white" />
@@ -170,14 +172,38 @@ const ContactUsSection = () => {
                       {CONTACT_INFO.email}
                     </a>
                   </CardContent>
+                </Card> */}
+                {/* Email */}
+                <Card className="border border-white/10 bg-white/5 backdrop-blur-md text-center rounded-2xl hover:scale-[1.03] transition-transform duration-500">
+                  <CardHeader>
+                    <div className="w-16 h-16 bg-gradient-to-r from-sky-400 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+                      <Mail className="w-8 h-8 text-white" />
+                    </div>
+                    <CardTitle className="text-xl text-white">
+                      Email Us
+                    </CardTitle>
+                  </CardHeader>
+
+                  <CardContent>
+                    <p className="text-gray-300 mb-4">
+                      Send us a detailed message about your project needs.
+                    </p>
+                    <a
+                      href={`mailto:${CONTACT_INFO.email}`}
+                      className="text-sky-400 font-semibold text-base sm:text-lg hover:underline break-all"
+                    >
+                      {CONTACT_INFO.email}
+                    </a>
+                  </CardContent>
                 </Card>
 
                 {/* WhatsApp */}
                 <Card className="border border-white/10 bg-white/5 backdrop-blur-md text-center rounded-2xl hover:scale-[1.03] transition-transform duration-500">
                   <CardHeader>
-                    <div className="w-16 h-16 bg-gradient-to-r from-green-400 to-green-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
-                      <MessageCircle className="w-8 h-8 text-white" />
+                    <div className="w-16 h-16 bg-gradient-to-r from-[#25D366] to-[#128C7E] rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+                      <FaWhatsappSquare className="w-20 h-20 text-white" />
                     </div>
+
                     <CardTitle className="text-xl text-white">
                       WhatsApp
                     </CardTitle>

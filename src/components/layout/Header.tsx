@@ -56,11 +56,15 @@ const Header = () => {
 
       {/* Main Navbar */}
       <header
+        // className={cn(
+        //   "sticky -top-1 z-50 w-full transition-all duration-300 border-b",
+        //   isScrolled
+        //     ? "bg-[#101727]/95 backdrop-blur-md shadow-lg border-gray-700"
+        //     : "bg-white/90 border-gray-200"
+        // )}
         className={cn(
-          "sticky -top-1 z-50 w-full transition-all duration-300 border-b",
-          isScrolled
-            ? "bg-[#101727]/95 backdrop-blur-md shadow-lg border-gray-700"
-            : "bg-white/90 border-gray-200"
+          "sticky -top-1 z-50 w-full transition-all duration-300 border-b bg-white/90 border-gray-200",
+          
         )}
       >
         <div className="container mx-auto px-4">
@@ -74,11 +78,14 @@ const Header = () => {
                   key={item.key}
                   href={item.href}
                   className={cn(
-                    "text-sm font-medium transition-colors relative after:block after:h-[2px] after:w-0 after:bg-gradient-to-r after:from-sky-400 after:to-blue-600 after:transition-all after:duration-300 hover:after:w-full",
+                    "text-sm font-medium transition-colors relative after:block after:h-[2px] after:w-0 after:bg-gradient-to-r after:from-sky-400 after:to-blue-600 after:transition-all after:duration-300 hover:after:w-full text-gray-800 hover:text-blue-600",
                     isActiveLink(item.href)
                       ? "text-blue-600 after:w-full font-semibold"
+                      // : isScrolled
+                      // ? "text-gray-100 hover:text-sky-400"
+                      // : "text-gray-800 hover:text-blue-600"
                       : isScrolled
-                      ? "text-gray-100 hover:text-sky-400"
+                      ? ""
                       : "text-gray-800 hover:text-blue-600"
                   )}
                 >
