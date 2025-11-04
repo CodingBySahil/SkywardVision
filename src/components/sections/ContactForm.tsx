@@ -12,7 +12,7 @@ function ContactForm() {
 
       <div className="relative z-10 w-full max-w-3xl px-6 lg:px-12 mx-auto text-center">
         <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-4">
-          Contact <span className="text-yellow-300">SkywardVision</span>
+          Contact <span className="text-teal-300">SkywardVision</span>
         </h2>
         <p className="text-blue-100 text-lg mb-12">
           Have a project in mind? Reach out and let our experts guide you
@@ -125,7 +125,7 @@ function ContactForm() {
           <div className="sm:col-span-2">
             <button
               type="submit"
-              className="w-full rounded-full bg-yellow-300 text-white font-semibold px-6 py-3 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
+              className="w-full rounded-full bg-teal-300 text-white font-semibold px-6 py-3 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
             >
               Send Message
             </button>

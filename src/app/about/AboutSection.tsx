@@ -80,7 +80,7 @@ const AboutSection = () => {
     <>
       <main id="main-content">
         {/* Hero Section */}
-        <section className="relative py-24 bg-gradient-to-r from-sky-400 to-blue-600 overflow-hidden">
+        <section className="relative py-24 bg-gradient-to-r to-sky-400 from-blue-600 overflow-hidden">
           {/* <!-- Floating Shapes --> */}
           <div className="absolute inset-0">
             <div className="absolute top-10 left-10 w-32 h-32 bg-white/10 rounded-full blur-3xl animate-pulse"></div>
@@ -96,12 +96,19 @@ const AboutSection = () => {
                   <h6 className="text-blue-100 text-base font-medium uppercase tracking-wide">
                     About SkywardVision
                   </h6>
-                  <h2 className="text-4xl md:text-5xl font-extrabold leading-tight">
+                  {/* <h2 className="text-4xl md:text-5xl font-extrabold leading-tight">
                     The{" "}
                     <span className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500">
                       Journey of Success
                     </span>
-                  </h2>
+                  </h2> */}
+                  <h2 className="text-4xl md:text-5xl font-extrabold leading-tight">
+  The{" "}
+  <span className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-300 to-teal-400">
+    Journey of Success
+  </span>
+</h2>
+
                   <p className="text-lg text-blue-100 leading-relaxed max-w-2xl mx-auto lg:mx-0">
                     SkywardVision’s story is built on innovation, teamwork, and
                     resilience. From humble beginnings to becoming a trusted

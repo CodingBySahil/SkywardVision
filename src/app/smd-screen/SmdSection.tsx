@@ -234,7 +234,7 @@ const SmdScreenSection = () => {
           </div>
 
           {/* Controls */}
-          <div className="absolute bottom-4 sm:bottom-8 right-4 sm:right-8 flex items-center space-x-3 sm:space-x-4 z-50">
+          <div className="absolute hidden bottom-4 sm:bottom-8 right-4 sm:right-8 flex items-center space-x-3 sm:space-x-4 z-50">
             {/* Nav */}
             <div className="bg-black/50 backdrop-blur-sm rounded-full p-1 sm:p-2 flex items-center space-x-1 sm:space-x-2">
               <Button
@@ -302,7 +302,7 @@ const SmdScreenSection = () => {
           </div>
 
           {/* Indicators */}
-          <div className="absolute bottom-4 sm:bottom-8 left-1/2 -translate-x-1/2 flex space-x-2 sm:space-x-3 z-50">
+          <div className="absolute hidden bottom-4 sm:bottom-8 left-1/2 -translate-x-1/2 flex space-x-2 sm:space-x-3 z-50">
             {slides.map((_, index) => (
               <button
                 key={index}

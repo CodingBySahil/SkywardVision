@@ -135,9 +135,15 @@ const ServicesSection = () => {
               </Badge>
 
               {/* Heading */}
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-white">
+              {/* <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-white">
                 Comprehensive Solutions
                 <span className="block text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500">
+                  For Every Business Need
+                </span>
+              </h2> */}
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-white">
+                Comprehensive Solutions
+                <span className="block text-transparent bg-clip-text bg-gradient-to-r from-cyan-100 to-teal-400">
                   For Every Business Need
                 </span>
               </h2>

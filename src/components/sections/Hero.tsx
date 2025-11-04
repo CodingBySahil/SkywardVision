@@ -190,7 +190,7 @@ const Hero = () => {
               sizes="100vw"
             />
             {/* Gradient Overlay for readability */}
-            <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-black/20 to-transparent" />
+            {/* <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-black/20 to-transparent" /> */}
           </div>
         ))}
       </div>
@@ -237,7 +237,7 @@ const Hero = () => {
       </button>
 
       {/* Dots Indicators */}
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex space-x-2 sm:space-x-3 z-20">
+      {/* <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex space-x-2 sm:space-x-3 z-20">
         {images.map((_, index) => (
           <button
             key={index}
@@ -250,7 +250,7 @@ const Hero = () => {
             aria-label={`Go to slide ${index + 1}`}
           />
         ))}
-      </div>
+      </div> */}
 
       {/* Decorative Floating Elements */}
       <div className="absolute top-10 left-8 w-16 h-16 bg-white/10 rounded-full blur-xl animate-pulse z-10" />
