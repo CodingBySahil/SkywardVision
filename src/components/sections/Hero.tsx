@@ -119,12 +119,7 @@
 "use client";
 import React, { useEffect, useState, useRef, useCallback } from "react";
 import Image from "next/image";
-import {
-  ChevronLeft,
-  ChevronRight,
-  Pause,
-  Play,
-} from "lucide-react";
+import { ChevronLeft, ChevronRight, Pause, Play } from "lucide-react";
 
 const Hero = () => {
   const images = [
@@ -261,4 +256,3 @@ const Hero = () => {
 };
 
 export default Hero;
-

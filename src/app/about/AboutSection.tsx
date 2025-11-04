@@ -103,11 +103,11 @@ const AboutSection = () => {
                     </span>
                   </h2> */}
                   <h2 className="text-4xl md:text-5xl font-extrabold leading-tight">
-  The{" "}
-  <span className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-300 to-teal-400">
-    Journey of Success
-  </span>
-</h2>
+                    The{" "}
+                    <span className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-300 to-teal-400">
+                      Journey of Success
+                    </span>
+                  </h2>
 
                   <p className="text-lg text-blue-100 leading-relaxed max-w-2xl mx-auto lg:mx-0">
                     SkywardVision’s story is built on innovation, teamwork, and

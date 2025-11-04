@@ -1,6 +1,6 @@
-import React from 'react';
-import { FaWhatsapp } from 'react-icons/fa';
-import { CONTACT_INFO } from '@/utils/constants';
+import React from "react";
+import { FaWhatsapp } from "react-icons/fa";
+import { CONTACT_INFO } from "@/utils/constants";
 
 const WhatsAppButton = () => {
   const whatsappUrl = `https://wa.me/${CONTACT_INFO.whatsapp}?text=Hello%20SkywardVision%2C%20I%20would%20like%20to%20inquire%20about%20your%20services.`;
@@ -15,7 +15,7 @@ const WhatsAppButton = () => {
       title="Chat with us on WhatsApp"
     >
       <FaWhatsapp className="w-7 h-7 text-white" />
-      
+
       {/* Ripple effect */}
       <span className="absolute -inset-1 rounded-full bg-green-500 opacity-30 animate-ping"></span>
     </a>

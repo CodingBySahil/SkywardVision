@@ -8,7 +8,6 @@ import {
   FaLinkedinIn,
 } from "react-icons/fa";
 
-
 type SocialLinks = {
   whatsapp?: string;
   facebook?: string;

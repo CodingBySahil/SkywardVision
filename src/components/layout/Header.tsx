@@ -63,8 +63,7 @@ const Header = () => {
         //     : "bg-white/90 border-gray-200"
         // )}
         className={cn(
-          "sticky -top-1 z-50 w-full transition-all duration-300 border-b bg-white/90 border-gray-200",
-          
+          "sticky -top-1 z-50 w-full transition-all duration-300 border-b bg-white border-gray-200"
         )}
       >
         <div className="container mx-auto px-4">
@@ -81,10 +80,10 @@ const Header = () => {
                     "text-sm font-medium transition-colors relative after:block after:h-[2px] after:w-0 after:bg-gradient-to-r after:from-sky-400 after:to-blue-600 after:transition-all after:duration-300 hover:after:w-full text-gray-800 hover:text-blue-600",
                     isActiveLink(item.href)
                       ? "text-blue-600 after:w-full font-semibold"
-                      // : isScrolled
+                      : // : isScrolled
                       // ? "text-gray-100 hover:text-sky-400"
                       // : "text-gray-800 hover:text-blue-600"
-                      : isScrolled
+                      isScrolled
                       ? ""
                       : "text-gray-800 hover:text-blue-600"
                   )}
@@ -105,10 +104,8 @@ const Header = () => {
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                 className={cn(
-                  "p-2 rounded-md transition-colors",
-                  isScrolled
-                    ? "text-gray-100 hover:text-sky-400"
-                    : "text-gray-700 hover:text-blue-600"
+                  "p-2 rounded-md transition-colors text-gray-700 hover:text-blue-600",
+                  isScrolled ? "" : "text-gray-700 hover:text-blue-600"
                 )}
               >
                 <HiMenu className="h-6 w-6" />
