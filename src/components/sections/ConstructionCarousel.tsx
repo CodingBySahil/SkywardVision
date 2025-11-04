@@ -4,29 +4,28 @@ import Image from "next/image";
 import { ChevronLeft, ChevronRight, Pause, Play } from "lucide-react";
 
 const ConstructionCarousel = () => {
- const slides = [
-  {
-    src: "/assets/construction/project1.jpg",
-    headline: "Building the Future, Brick by Brick",
-    subtitle: "Delivering excellence in every structure we create.",
-  },
-  {
-    src: "/assets/construction/project2.jpg",
-    headline: "Engineering Strength and Reliability",
-    subtitle: "From foundations to finish — quality you can trust.",
-  },
-  {
-    src: "/assets/construction/project3.jpg",
-    headline: "Innovative Construction Solutions",
-    subtitle: "Modern designs built to stand the test of time.",
-  },
-  {
-    src: "/assets/construction/project4.jpg",
-    headline: "Crafting Landmarks That Last",
-    subtitle: "Turning architectural visions into reality.",
-  },
-];
-
+  const slides = [
+    {
+      src: "/assets/construction/project1.jpg",
+      headline: "Building the Future, Brick by Brick",
+      subtitle: "Delivering excellence in every structure we create.",
+    },
+    {
+      src: "/assets/construction/project2.jpg",
+      headline: "Engineering Strength and Reliability",
+      subtitle: "From foundations to finish — quality you can trust.",
+    },
+    {
+      src: "/assets/construction/project3.jpg",
+      headline: "Innovative Construction Solutions",
+      subtitle: "Modern designs built to stand the test of time.",
+    },
+    {
+      src: "/assets/construction/project4.jpg",
+      headline: "Crafting Landmarks That Last",
+      subtitle: "Turning architectural visions into reality.",
+    },
+  ];
 
   const [current, setCurrent] = useState(0);
   const [isPaused, setIsPaused] = useState(false);

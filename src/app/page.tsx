@@ -1,4 +1,3 @@
-
 import React from "react";
 
 import Hero from "@/components/sections/Hero";
@@ -25,8 +24,8 @@ const HomePage = () => {
       <main id="main-content">
         <Hero />
         {/* <ServicesGrid /> */}
-        <WhatWeDo/>
-        <EventsSection/>
+        <WhatWeDo />
+        <EventsSection />
         <PortfolioGallery />
         <Testimonials />
         {/* <ContactForm /> */}

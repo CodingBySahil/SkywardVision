@@ -30,7 +30,7 @@ const ServicesSection = () => {
     MdLocalShipping: MdLocalShipping,
   };
 
-  const serviceDetails:any = {
+  const serviceDetails: any = {
     outdoor: {
       benefits: [
         "High visibility locations",
@@ -320,8 +320,7 @@ const ServicesSection = () => {
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-6xl mx-auto space-y-24">
               {SERVICES.map((service, index) => {
-                const IconComponent =
-                  iconMap[service.icon] || MdOutdoorGrill;
+                const IconComponent = iconMap[service.icon] || MdOutdoorGrill;
                 const details = serviceDetails[service.id] || {};
                 const isEven = index % 2 === 0;
 
