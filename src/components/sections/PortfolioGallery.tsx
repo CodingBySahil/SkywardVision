@@ -123,7 +123,7 @@ const PortfolioGallery = () => {
           {portfolioItems.map((item, index) => (
             <Card
               key={item.id}
-              className="group relative border-0 bg-gradient-to-b from-white to-blue-50/90 backdrop-blur-sm shadow-md hover:shadow-2xl rounded-2xl overflow-hidden transition-all duration-500 hover:-translate-y-2"
+              className="group relative border-0 bg-gradient-to-b from-white to-blue-100/90 backdrop-blur-sm shadow-md hover:shadow-2xl rounded-2xl overflow-hidden transition-all duration-500 hover:-translate-y-2"
             >
               <div className="relative overflow-hidden">
                 <img
@@ -132,22 +132,22 @@ const PortfolioGallery = () => {
                   className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
                   loading={index < 3 ? "eager" : "lazy"}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
                   <div className="w-full p-4">
                     <Dialog>
                       <DialogTrigger asChild>
                         <Button
                           size="sm"
-                          className="w-full bg-gradient-to-r from-sky-400 to-blue-600 text-white hover:opacity-90 transition"
+                          className="w-full bg-gradient-to-r from-sky-500 to-blue-700 text-white hover:from-sky-600 hover:to-blue-800 transition"
                           onClick={() => setSelectedProject(item)}
                         >
-                          <Eye className="w-4 h-4 mr-2" />
+                          <Eye className="w-4 h-4 mr-2 text-white" />
                           View Details
                         </Button>
                       </DialogTrigger>
-                      <DialogContent className="max-w-2xl">
+                      <DialogContent className="max-w-2xl bg-white text-gray-800">
                         <DialogHeader>
-                          <DialogTitle className="text-2xl font-bold">
+                          <DialogTitle className="text-2xl font-bold text-blue-900">
                             {item.title}
                           </DialogTitle>
                           <DialogDescription className="text-base text-gray-600">
@@ -165,7 +165,7 @@ const PortfolioGallery = () => {
                               <Badge
                                 key={idx}
                                 variant="secondary"
-                                className="text-xs bg-sky-100 text-sky-700 border border-sky-200"
+                                className="text-xs bg-blue-100 text-blue-800 border border-blue-200"
                               >
                                 {tag}
                               </Badge>
@@ -176,11 +176,11 @@ const PortfolioGallery = () => {
                           </p>
                           <Button
                             asChild
-                            className="w-full bg-gradient-to-r from-sky-400 to-blue-600 text-white hover:opacity-90"
+                            className="w-full bg-gradient-to-r from-sky-500 to-blue-700 text-white hover:from-sky-600 hover:to-blue-800"
                           >
                             <Link href="/contact-us">
                               Start Similar Project
-                              <ExternalLink className="w-4 h-4 ml-2" />
+                              <ExternalLink className="w-4 h-4 ml-2 text-white" />
                             </Link>
                           </Button>
                         </div>
@@ -188,16 +188,16 @@ const PortfolioGallery = () => {
                     </Dialog>
                   </div>
                 </div>
-                <Badge className="absolute top-4 left-4 bg-white/90 text-blue-900 shadow">
+                <Badge className="absolute top-4 left-4 bg-white text-blue-800 shadow-md border border-blue-100">
                   {item.category}
                 </Badge>
               </div>
 
               <CardContent className="p-6">
-                <h3 className="font-bold text-lg text-blue-900 mb-2 group-hover:text-sky-600 transition-colors">
+                <h3 className="font-bold text-lg text-blue-900 mb-2 group-hover:text-blue-700 transition-colors">
                   {item.title}
                 </h3>
-                <p className="text-gray-600 text-sm mb-3">
+                <p className="text-gray-700 text-sm mb-3">
                   {item.client} • {item.year}
                 </p>
                 <div className="flex flex-wrap gap-2">
@@ -205,13 +205,16 @@ const PortfolioGallery = () => {
                     <Badge
                       key={idx}
                       variant="outline"
-                      className="text-xs border-sky-300 text-sky-600"
+                      className="text-xs border-blue-400 text-blue-700 bg-blue-50"
                     >
                       {tag}
                     </Badge>
                   ))}
                   {item.tags.length > 2 && (
-                    <Badge variant="outline" className="text-xs text-gray-500">
+                    <Badge
+                      variant="outline"
+                      className="text-xs text-gray-600 bg-gray-100"
+                    >
                       +{item.tags.length - 2}
                     </Badge>
                   )}

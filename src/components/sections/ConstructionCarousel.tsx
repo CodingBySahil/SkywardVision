@@ -141,7 +141,7 @@ const ConstructionCarousel = () => {
       </button>
 
       {/* Dot Indicators */}
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex space-x-2 sm:space-x-3 z-40">
+      {/* <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex space-x-2 sm:space-x-3 z-40">
         {slides.map((_, index) => (
           <button
             key={index}
@@ -154,7 +154,7 @@ const ConstructionCarousel = () => {
             }`}
           />
         ))}
-      </div>
+      </div> */}
 
       {/* Cinematic Ambient Glows */}
       <div className="absolute top-10 left-10 w-24 h-24 bg-blue-500/20 rounded-full blur-3xl animate-pulse z-0" />

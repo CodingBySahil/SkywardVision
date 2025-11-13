@@ -211,12 +211,12 @@ const SmdScreenSection = () => {
                   {currentSlideData.description}
                 </p>
 
-                <Button
+                {/* <Button
                   size="lg"
                   className="bg-white text-blue-600 hover:bg-blue-50 font-semibold px-6 sm:px-8 md:px-10 py-3 sm:py-4 text-base sm:text-lg rounded-full transform hover:scale-105 transition-all duration-300"
                 >
                   {currentSlideData.cta}
-                </Button>
+                </Button> */}
               </div>
             </div>
           </div>
