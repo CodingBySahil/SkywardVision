@@ -5,27 +5,68 @@ import { ChevronLeft, ChevronRight, Pause, Play } from "lucide-react";
 
 const ConstructionCarousel = () => {
   const slides = [
-    {
-      src: "/assets/construction/project1.jpg",
-      headline: "Building the Future, Brick by Brick",
-      subtitle: "Delivering excellence in every structure we create.",
-    },
-    {
-      src: "/assets/construction/project2.jpg",
-      headline: "Engineering Strength and Reliability",
-      subtitle: "From foundations to finish — quality you can trust.",
-    },
-    {
-      src: "/assets/construction/project3.jpg",
-      headline: "Innovative Construction Solutions",
-      subtitle: "Modern designs built to stand the test of time.",
-    },
-    {
-      src: "/assets/construction/project4.jpg",
-      headline: "Crafting Landmarks That Last",
-      subtitle: "Turning architectural visions into reality.",
-    },
-  ];
+  {
+    src: "/assets/construction/project1.jpg",
+    headline: "Building the Future, Brick by Brick",
+    subtitle: "Delivering excellence in every structure we create.",
+  },
+  {
+    src: "/assets/construction/project2.jpg",
+    headline: "Engineering Strength and Reliability",
+    subtitle: "From foundations to finish — quality you can trust.",
+  },
+  {
+    src: "/assets/construction/project3.jpg",
+    headline: "Innovative Construction Solutions",
+    subtitle: "Modern designs built to stand the test of time.",
+  },
+  {
+    src: "/assets/construction/project4.jpg",
+    headline: "Crafting Landmarks That Last",
+    subtitle: "Turning architectural visions into reality.",
+  },
+  {
+    src: "/assets/construction/project5.jpg",
+    headline: "Precision in Every Detail",
+    subtitle: "Ensuring accuracy from blueprint to completion.",
+  },
+  {
+    src: "/assets/construction/project6.jpg",
+    headline: "Sustainable Building Practices",
+    subtitle: "Eco-friendly solutions for a greener tomorrow.",
+  },
+  {
+    src: "/assets/construction/project7.jpg",
+    headline: "Timely Project Delivery",
+    subtitle: "Meeting deadlines without compromising quality.",
+  },
+  {
+    src: "/assets/construction/project8.jpg",
+    headline: "Safety First, Always",
+    subtitle: "Protecting our team and your investment.",
+  },
+  {
+    src: "/assets/construction/project9.jpg",
+    headline: "Modern Architecture, Timeless Design",
+    subtitle: "Creating spaces that inspire and endure.",
+  },
+  {
+    src: "/assets/construction/project10.jpg",
+    headline: "Collaborating for Excellence",
+    subtitle: "Working closely with clients every step of the way.",
+  },
+  {
+    src: "/assets/construction/project11.jpg",
+    headline: "Innovation Meets Expertise",
+    subtitle: "Combining creativity and experience in every project.",
+  },
+  {
+    src: "/assets/construction/project12.jpg",
+    headline: "Your Vision, Our Mission",
+    subtitle: "Transforming ideas into tangible structures.",
+  },
+];
+
 
   const [current, setCurrent] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
