@@ -223,21 +223,21 @@ const Footer = () => {
       {/* Bottom Footer */}
       <div className="border-t border-gray-700">
         <div className="container mx-auto px-4 py-4">
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-2 md:space-y-0">
+          <div className="flex flex-col md:flex-row justify-center items-center space-y-2 md:space-y-0">
             <p className="text-sm text-gray-400">
               © {currentYear} {SITE_CONFIG.name}. All rights reserved.
             </p>
-            <div className="flex space-x-4">
-              {NAVIGATION.footer.legal.map((link, index) => (
-                <Link
-                  key={index}
-                  href={link.href}
-                  className="text-sm text-gray-400 hover:text-primary transition-colors"
-                >
-                  {link.name}
-                </Link>
-              ))}
-            </div>
+            {/* <div className="flex space-x-4">
+                {NAVIGATION.footer.legal.map((link, index) => (
+                  <Link
+                    key={index}
+                    href={link.href}
+                    className="text-sm text-gray-400 hover:text-primary transition-colors"
+                  >
+                    {link.name}
+                  </Link>
+                ))}
+              </div> */}
           </div>
         </div>
       </div>

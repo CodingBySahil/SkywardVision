@@ -11,8 +11,9 @@ export const SITE_CONFIG = {
 
 // Contact information
 export const CONTACT_INFO = {
-  phone: "+92 331 5484042",
-  whatsapp: process.env.VITE_WHATSAPP_NUMBER || "923315484042",
+  phone: "+92 337 5484042",
+  whatsapp: process.env.VITE_WHATSAPP_NUMBER || "923375484042",
+  // whatsapp:  "923375484042",
   email: "support@skywardvision.com.pk",
   address: {
     street: "123 Business District",
@@ -51,11 +52,11 @@ export const NAVIGATION = {
   ],
   footer: {
     services: [
-      { name: "Outdoor Advertising", href: "/services#outdoor" },
-      { name: "Digital Marketing", href: "/services#digital" },
-      { name: "Real Estate", href: "/services#real-estate" },
-      { name: "Dairy Farming", href: "/services#dairy" },
-      { name: "Transportation", href: "/services#transportation" },
+      { name: "Outdoor Advertising", href: "/services#smd-outdoor" },
+      { name: "Digital Marketing", href: "/services#smd-digital" },
+      { name: "Real Estate", href: "/services#smd-realestate" },
+      { name: "Retail & Brand Promotion", href: "/services#smd-retail" },
+      { name: "Transportation", href: "/services#smd-transport" },
     ],
     company: [
       { name: "About Us", href: "/about" },

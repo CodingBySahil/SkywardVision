@@ -147,7 +147,7 @@ const AboutSection = () => {
                 </div>
 
                 {/* <!-- CTA Button --> */}
-                <div>
+                {/* <div>
                   <a
                     href="/about"
                     className="inline-flex items-center px-6 py-3 rounded-full bg-white text-blue-600 font-semibold shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
@@ -167,7 +167,7 @@ const AboutSection = () => {
                       />
                     </svg>
                   </a>
-                </div>
+                </div> */}
               </div>
 
               {/* <!-- Right Image --> */}
