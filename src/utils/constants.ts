@@ -31,14 +31,20 @@ export const CONTACT_INFO = {
 };
 
 // Social media links
+// export const SOCIAL_LINKS = {
+//   facebook: "https://facebook.com/skywardvision",
+//   twitter: "https://twitter.com/skywardvision",
+//   instagram: "https://instagram.com/skywardvision",
+//   linkedin: "https://linkedin.com/company/skywardvision",
+//   youtube: "https://youtube.com/skywardvision",
+// };
 export const SOCIAL_LINKS = {
-  facebook: "https://facebook.com/skywardvision",
-  twitter: "https://twitter.com/skywardvision",
-  instagram: "https://instagram.com/skywardvision",
-  linkedin: "https://linkedin.com/company/skywardvision",
-  youtube: "https://youtube.com/skywardvision",
+  facebook: "https://www.facebook.com/share/1EaPseDntA/",
+  tiktok: "https://www.tiktok.com/@skywardvisionltd",
+  instagram: "https://www.instagram.com/skywardvisionltd?igsh=bXBreTlzdDZxbm9v",
+  x: "https://x.com/SkywardVision",
+  youtube: "https://www.youtube.com/@SkywardVision",
 };
-
 // Navigation menu items
 export const NAVIGATION = {
   main: [

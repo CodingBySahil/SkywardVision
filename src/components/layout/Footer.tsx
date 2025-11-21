@@ -11,6 +11,7 @@ import {
   FaPhone,
   FaEnvelope,
   FaClock,
+  FaTiktok,
 } from "react-icons/fa";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -51,7 +52,7 @@ const Footer = () => {
               comprehensive business solutions across multiple sectors in
               Pakistan.
             </p>
-            <div className="flex space-x-4">
+            {/* <div className="flex space-x-4">
               <a
                 href={SOCIAL_LINKS.facebook}
                 target="_blank"
@@ -88,6 +89,62 @@ const Footer = () => {
               >
                 <FaLinkedinIn className="w-4 h-4" />
               </a>
+              <a
+                href={SOCIAL_LINKS.youtube}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-8 h-8 bg-gray-700 rounded-full flex items-center justify-center hover:bg-primary transition-colors"
+                aria-label="Subscribe to our YouTube channel"
+              >
+                <FaYoutube className="w-4 h-4" />
+              </a>
+            </div> */}
+            <div className="flex space-x-4">
+              {/* Facebook */}
+              <a
+                href={SOCIAL_LINKS.facebook}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-8 h-8 bg-gray-700 rounded-full flex items-center justify-center hover:bg-primary transition-colors"
+                aria-label="Follow us on Facebook"
+              >
+                <FaFacebookF className="w-4 h-4" />
+              </a>
+
+              {/* X (Twitter) */}
+              <a
+                href={SOCIAL_LINKS.x}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-8 h-8 bg-gray-700 rounded-full flex items-center justify-center hover:bg-primary transition-colors"
+                aria-label="Follow us on X"
+              >
+                <FaTwitter className="w-4 h-4" />
+              </a>
+
+              {/* Instagram */}
+              <a
+                href={SOCIAL_LINKS.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-8 h-8 bg-gray-700 rounded-full flex items-center justify-center hover:bg-primary transition-colors"
+                aria-label="Follow us on Instagram"
+              >
+                <FaInstagram className="w-4 h-4" />
+              </a>
+
+              {/* TikTok */}
+              <a
+                href={SOCIAL_LINKS.tiktok}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-8 h-8 bg-gray-700 rounded-full flex items-center justify-center hover:bg-primary transition-colors"
+                aria-label="Follow us on TikTok"
+              >
+                <FaTiktok className="w-4 h-4" />
+              </a>
+
+              {/* YouTube */}
               <a
                 href={SOCIAL_LINKS.youtube}
                 target="_blank"
