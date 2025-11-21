@@ -55,11 +55,10 @@ export const NAVIGATION = {
   ],
   footer: {
     services: [
-      { name: "Outdoor Advertising", href: "/services#smd-outdoor" },
+      { name: "SMD Outdoor Advertising", href: "/services#smd-outdoor" },
       { name: "Digital Marketing", href: "/services#smd-digital" },
-      { name: "Real Estate", href: "/services#smd-realestate" },
-      { name: "Retail & Brand Promotion", href: "/services#smd-retail" },
-      { name: "Transportation", href: "/services#smd-transport" },
+      { name: "Brand Development", href: "/services#brand-development" },
+      { name: "Construction", href: "/services#construction-services" },
     ],
     company: [
       { name: "About Us", href: "/about" },
@@ -84,7 +83,7 @@ export const NAVIGATION = {
 export const SERVICES = [
   {
     id: "smd-outdoor",
-    name: "Outdoor Advertising",
+    name: "SMD Outdoor Advertising",
     icon: "MdOutdoorGrill",
     description:
       "High-visibility outdoor digital displays placed at strategic locations to help brands reach a broad audience throughout the day.",
@@ -110,56 +109,39 @@ export const SERVICES = [
       "Motion-Based Visual Ads",
       "High Audience Engagement",
     ],
-    image:
-      "https://images.unsplash.com/photo-1610376096719-9819725cfb00?w=600&auto=format&fit=crop&q=60",
+    image: "/assets/services/digitalmarketing.png",
   },
 
   {
-    id: "smd-realestate",
-    name: "Real Estate Visual Promotion",
-    icon: "MdHome",
-    description:
-      "Showcase properties with visually engaging digital promotions that attract buyers, highlight features, and support real estate marketing campaigns.",
-    features: [
-      "Property Showreels",
-      "Prime Display Points",
-      "Investor-Focused Promotions",
-      "Visual Walkthrough Presentations",
-    ],
-    image:
-      "https://images.unsplash.com/photo-1661730874728-b99850e4b3e1?w=600&auto=format&fit=crop&q=60",
-  },
-
-  {
-    id: "smd-retail",
-    name: "Retail & Brand Development",
+    id: "brand-development",
+    name: "Brand Development",
     icon: "GiFarmTractor",
     description:
-      "Enhance brand presence inside retail environments with creative promotions that boost product visibility and support customer purchasing decisions.",
+      "We build strong, memorable brands by shaping their identity, improving customer experience, and enhancing their presence across both physical retail and e-commerce platforms.",
     features: [
-      "In-Store Digital Promotion",
-      "Mall-Based Branding",
-      "Product Highlight Campaigns",
-      "Dynamic Retail Offers",
+      "Brand Identity Creation",
+      "Retail Brand Positioning",
+      "E-Commerce Store Development",
+      "Product Packaging & Presentation",
+      "Customer Experience Enhancement",
+      "Content & Visual Branding Strategies",
     ],
-    image:
-      "https://plus.unsplash.com/premium_photo-1747710899354-e17a0fd00d49?w=600&auto=format&fit=crop&q=60",
+    image: "/assets/services/branddevelopement.webp",
   },
 
   {
-    id: "smd-transport",
-    name: "Transit Advertising",
+    id: "construction-services",
+    name: "Construction ",
     icon: "MdLocalShipping",
     description:
-      "Reach daily commuters through high-traffic advertising placed across transport hubs, highways, and busy public routes.",
+      "We handle complete construction and contracting services, managing projects from tender acquisition to on-site execution with quality, safety, and timely delivery.",
     features: [
-      "Highway Digital Boards",
-      "Bus & Terminal Advertising",
-      "Airport Branding",
-      "Real-Time Content Updates",
+      "Government & Private Tenders",
+      "Residential & Commercial Construction",
+      "Project Planning & Execution",
+      "Quality Assurance & Site Management",
     ],
-    image:
-      "https://plus.unsplash.com/premium_photo-1750311650758-9dce26d169e9?w=600&auto=format&fit=crop&q=60",
+    image: "/assets/services/construction.jpg",
   },
 ];
 
