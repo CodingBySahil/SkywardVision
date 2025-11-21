@@ -1,12 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import {
-  FaWhatsapp,
-  FaFacebookF,
-  FaTwitter,
-  FaLinkedinIn,
-} from "react-icons/fa";
+import { FaWhatsapp, FaFacebookF } from "react-icons/fa";
 
 type SocialLinks = {
   whatsapp?: string;
@@ -25,52 +20,31 @@ interface TeamMember {
 
 const teamMembers: TeamMember[] = [
   {
-    image: "/assets/team-member/male.jpg",
-    name: "John Carter",
-    position: "Project Manager",
+    image: "/assets/team-member/CEO.jpeg",
+    name: "Meer Ahmad",
+    position: "Founder & CEO",
     about:
-      "Leading construction projects with 15+ years of industry expertise and a passion for precision.",
-    social: { whatsapp: "#", facebook: "#", twitter: "#", linkedin: "#" },
+      "Providing strategic leadership and guiding Skyward Vision with a clear vision, strong decision-making, and a commitment to excellence in every project.",
+    social: {
+      whatsapp: "https://wa.me/923158271857",
+      facebook: "https://www.facebook.com/share/1F3CHo43JG/",
+    },
   },
   {
-    image: "/assets/team-member/female.jpg",
-    name: "Aisha Khan",
-    position: "Site Engineer",
+    image: "/assets/team-member/director.jpeg",
+    name: "Muhammad Asad",
+    position: "Director",
     about:
-      "Hands-on site leadership, safety-first attitude and rigorous schedule management.",
-    social: { whatsapp: "#", facebook: "#", twitter: "#", linkedin: "#" },
+      "Overseeing core operations, ensuring project quality, and managing company workflows with a focus on growth, efficiency, and client satisfaction.",
+    social: { whatsapp: "https://wa.me/923475861902", },
   },
   {
-    image: "/assets/team-member/male.jpg",
-    name: "Faraz Ali",
-    position: "Architect",
+    image: "/assets/team-member/marketingdirector.jpeg",
+    name: "Amjid Ali",
+    position: "Marketing Director",
     about:
-      "Designs functional and beautiful structures that balance form and feasibility.",
-    social: { whatsapp: "#", facebook: "#", twitter: "#", linkedin: "#" },
-  },
-  {
-    image: "/assets/team-member/female.jpg",
-    name: "Sana Noor",
-    position: "Project Coordinator",
-    about:
-      "Keeps stakeholders aligned and delivers complex tasks on schedule and budget.",
-    social: { whatsapp: "#", facebook: "#", twitter: "#", linkedin: "#" },
-  },
-  {
-    image: "/assets/team-member/male.jpg",
-    name: "Bilal Raza",
-    position: "Structural Engineer",
-    about:
-      "Ensures structural integrity with sustainable materials and modern methods.",
-    social: { whatsapp: "#", facebook: "#", twitter: "#", linkedin: "#" },
-  },
-  {
-    image: "/assets/team-member/female.jpg",
-    name: "Mehwish Iqbal",
-    position: "Quality Manager",
-    about:
-      "Champions quality standards across sites — meticulous, reliable, resilient.",
-    social: { whatsapp: "#", facebook: "#", twitter: "#", linkedin: "#" },
+      "Driving brand visibility, leading marketing strategies, and building strong client relationships to expand Skyward Vision’s presence in the construction sector.",
+    social: { },
   },
 ];
 
@@ -167,26 +141,6 @@ export default function OurTeam() {
                     className="w-9 h-9 flex items-center justify-center rounded-full bg-black/20 hover:bg-black/40 text-[#1877F2] transition-transform hover:scale-110"
                   >
                     <FaFacebookF className="w-4 h-4" />
-                  </a>
-                )}
-                {m.social.twitter && (
-                  <a
-                    href={m.social.twitter}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-9 h-9 flex items-center justify-center rounded-full bg-black/20 hover:bg-black/40 text-[#1DA1F2] transition-transform hover:scale-110"
-                  >
-                    <FaTwitter className="w-4 h-4" />
-                  </a>
-                )}
-                {m.social.linkedin && (
-                  <a
-                    href={m.social.linkedin}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-9 h-9 flex items-center justify-center rounded-full bg-black/20 hover:bg-black/40 text-[#0A66C2] transition-transform hover:scale-110"
-                  >
-                    <FaLinkedinIn className="w-4 h-4" />
                   </a>
                 )}
               </div>

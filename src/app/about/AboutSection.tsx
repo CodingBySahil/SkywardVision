@@ -17,26 +17,23 @@ import Link from "next/link";
 const AboutSection = () => {
   const teamMembers = [
     {
-      name: "Ahmed Hassan",
-      role: "CEO & Founder",
-      image:
-        "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400",
+      name: "Meer Ahmad",
+      role: "Founder & CEO",
+      image: "/assets/team-member/CEO.jpeg",
       description:
         "Visionary leader with 10+ years in advertising and business development.",
     },
     {
-      name: "Sarah Khan",
-      role: "Creative Director",
-      image:
-        "https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=400",
+      name: "Muhammad Asad",
+      role: "Director",
+      image: "/assets/team-member/director.jpeg",
       description:
         "Award-winning creative professional specializing in brand identity and campaigns.",
     },
     {
-      name: "Muhammad Ali",
-      role: "Operations Manager",
-      image:
-        "https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=400",
+      name: "Amjid Ali",
+      role: "Marketing Director",
+      image: "/assets/team-member/marketingdirector.jpeg",
       description:
         "Operations expert ensuring seamless project delivery and client satisfaction.",
     },

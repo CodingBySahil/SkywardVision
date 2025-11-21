@@ -31,13 +31,6 @@ export const CONTACT_INFO = {
 };
 
 // Social media links
-// export const SOCIAL_LINKS = {
-//   facebook: "https://facebook.com/skywardvision",
-//   twitter: "https://twitter.com/skywardvision",
-//   instagram: "https://instagram.com/skywardvision",
-//   linkedin: "https://linkedin.com/company/skywardvision",
-//   youtube: "https://youtube.com/skywardvision",
-// };
 export const SOCIAL_LINKS = {
   facebook: "https://www.facebook.com/share/1EaPseDntA/",
   tiktok: "https://www.tiktok.com/@skywardvisionltd",
@@ -53,7 +46,11 @@ export const NAVIGATION = {
     { name: "Services", href: "/services", key: "services" },
     { name: "Portfolio", href: "/portfolio", key: "portfolio" },
     { name: "Contact", href: "/contact-us", key: "contact" },
-    { name: "SMD Screen", href: "/smd-screen", key: "smd-screen" },
+    {
+      name: "Outdoor Advertising",
+      href: "/outdoor-advertising",
+      key: "outdoor-advertising",
+    },
     { name: "Construction", href: "/construction", key: "construction" },
   ],
   footer: {
@@ -87,78 +84,82 @@ export const NAVIGATION = {
 export const SERVICES = [
   {
     id: "smd-outdoor",
-    name: "SMD Outdoor Advertising",
+    name: "Outdoor Advertising",
     icon: "MdOutdoorGrill",
     description:
-      "High-resolution outdoor SMD screens placed at prime locations to capture massive audience attention day and night.",
+      "High-visibility outdoor digital displays placed at strategic locations to help brands reach a broad audience throughout the day.",
     features: [
-      "Full HD/4K LED Displays",
-      "Strategic City Locations",
-      "Dynamic Content Scheduling",
-      "24/7 Brand Visibility",
+      "High-clarity LED Displays",
+      "Prime City Locations",
+      "Flexible Content Scheduling",
+      "24/7 Brand Exposure",
     ],
     image:
-      "https://images.unsplash.com/photo-1628468033761-125b565aaac7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzJ8fGFkdmVydGlzaW5nJTIwc2NycmVuc3xlbnwwfHwwfHx8MA%3D%3D",
+      "https://images.unsplash.com/photo-1628468033761-125b565aaac7?w=600&auto=format&fit=crop&q=60",
   },
+
   {
     id: "smd-digital",
-    name: "Digital SMD Marketing",
+    name: "Digital Marketing",
     icon: "MdDevices",
     description:
-      "Engage your customers with digital SMD campaigns on indoor and outdoor LED screens for maximum interactivity and reach.",
+      "Engage customers through dynamic digital content in malls, events, and indoor environments to maximize brand interaction.",
     features: [
-      "Indoor LED Screens",
-      "Mall & Event Advertising",
-      "Dynamic Motion Ads",
-      "High Engagement Rates",
+      "Indoor Digital Displays",
+      "Event & Mall Advertising",
+      "Motion-Based Visual Ads",
+      "High Audience Engagement",
     ],
     image:
-      "https://images.unsplash.com/photo-1610376096719-9819725cfb00?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTV8fERpZ2l0YWwlMjBzY3JlZW5zfGVufDB8fDB8fHww",
+      "https://images.unsplash.com/photo-1610376096719-9819725cfb00?w=600&auto=format&fit=crop&q=60",
   },
+
   {
     id: "smd-realestate",
-    name: "Real Estate SMD Ads",
+    name: "Real Estate Visual Promotion",
     icon: "MdHome",
     description:
-      "Showcase properties with vibrant SMD video ads that attract buyers, investors, and stakeholders instantly.",
+      "Showcase properties with visually engaging digital promotions that attract buyers, highlight features, and support real estate marketing campaigns.",
     features: [
       "Property Showreels",
-      "Prime Location Displays",
-      "Investor Targeting",
-      "Virtual Walkthrough Ads",
+      "Prime Display Points",
+      "Investor-Focused Promotions",
+      "Visual Walkthrough Presentations",
     ],
     image:
-      "https://images.unsplash.com/photo-1661730874728-b99850e4b3e1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fGJyYW5kJTIwcHJvbW90aW9uJTIwc2NyZWVuc3xlbnwwfHwwfHx8MA%3D%3D",
+      "https://images.unsplash.com/photo-1661730874728-b99850e4b3e1?w=600&auto=format&fit=crop&q=60",
   },
+
   {
     id: "smd-retail",
-    name: "Retail & Brand Promotions",
+    name: "Retail & Brand Development",
     icon: "GiFarmTractor",
     description:
-      "Boost retail sales with SMD screens inside stores, malls, and public spaces for eye-catching product promotions.",
+      "Enhance brand presence inside retail environments with creative promotions that boost product visibility and support customer purchasing decisions.",
     features: [
-      "In-Store SMD Displays",
-      "Mall Advertising",
-      "Product Launch Ads",
-      "Dynamic Promotions",
+      "In-Store Digital Promotion",
+      "Mall-Based Branding",
+      "Product Highlight Campaigns",
+      "Dynamic Retail Offers",
     ],
     image:
-      "https://plus.unsplash.com/premium_photo-1747710899354-e17a0fd00d49?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGJyYW5kJTIwcHJvbW90aW9uJTIwc2NyZWVuc3xlbnwwfHwwfHx8MA%3D%3D",
+      "https://plus.unsplash.com/premium_photo-1747710899354-e17a0fd00d49?w=600&auto=format&fit=crop&q=60",
   },
+
   {
     id: "smd-transport",
-    name: "Transit SMD Advertising",
+    name: "Transit Advertising",
     icon: "MdLocalShipping",
     description:
-      "Target daily commuters with high-impact SMD ads on highways, bus stands, airports, and transit hubs.",
+      "Reach daily commuters through high-traffic advertising placed across transport hubs, highways, and busy public routes.",
     features: [
-      "Highway LED Billboards",
-      "Bus Stand Advertising",
-      "Airport Digital Boards",
-      "Real-Time Campaign Updates",
+      "Highway Digital Boards",
+      "Bus & Terminal Advertising",
+      "Airport Branding",
+      "Real-Time Content Updates",
     ],
     image:
-      "https://plus.unsplash.com/premium_photo-1750311650758-9dce26d169e9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjV8fGJyYW5kJTIwcHJvbW90aW9uJTIwc2NyZWVuc3xlbnwwfHwwfHx8MA%3D%3D",
+      "https://plus.unsplash.com/premium_photo-1750311650758-9dce26d169e9?w=600&auto=format&fit=crop&q=60",
   },
 ];
 
