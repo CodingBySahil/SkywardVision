@@ -17,15 +17,15 @@ export const CONTACT_INFO = {
   email: "support@skywardvision.com.pk",
   address: {
     street: "123 Business District",
-    city: "Karachi",
-    state: "Sindh",
+    city: "KPK",
+    state: "Peshawar",
     country: "Pakistan",
-    zipCode: "75000",
+    zipCode: "25000",
     full: "Ofc # 6, 4th Floor, Peshawar Mall Near Hayatabad Toll Plaza Ring Road Peshawar",
   },
   hours: {
-    weekdays: "Monday - Friday: 9:00 AM - 6:00 PM",
-    saturday: "Saturday: 10:00 AM - 4:00 PM",
+    weekdays: "Monday - Friday: 09:00 AM - 05:00 PM",
+    saturday: "Saturday: 09:00 AM - 05:00 PM",
     sunday: "Sunday: Closed",
   },
 };

@@ -36,7 +36,7 @@ const teamMembers: TeamMember[] = [
     position: "Director",
     about:
       "Overseeing core operations, ensuring project quality, and managing company workflows with a focus on growth, efficiency, and client satisfaction.",
-    social: { whatsapp: "https://wa.me/923475861902", },
+    social: { whatsapp: "https://wa.me/923475861902" },
   },
   {
     image: "/assets/team-member/marketingdirector.jpeg",
@@ -44,7 +44,7 @@ const teamMembers: TeamMember[] = [
     position: "Marketing Director",
     about:
       "Driving brand visibility, leading marketing strategies, and building strong client relationships to expand Skyward Vision’s presence in the construction sector.",
-    social: { },
+    social: {},
   },
 ];
 
