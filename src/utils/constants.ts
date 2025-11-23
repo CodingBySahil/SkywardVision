@@ -128,7 +128,6 @@ export const SERVICES = [
     ],
     image: "/assets/services/branddevelopement.webp",
   },
-
   {
     id: "construction-services",
     name: "Construction ",
